@@ -40,6 +40,9 @@ atc-conflict-advisory/
 ├── checkpoints/
 │   └── lstm_v1/best.pt          # Trained Residual LSTM checkpoint
 ├── src/
+│   ├── agent/
+│   │   ├── advisor.py           # ConflictAdvisoryAgent end-to-end pipeline
+│   │   └── types.py             # Frozen advisory dataclasses (PairwiseCPA, ConflictAdvisory, etc.)
 │   ├── conflict/
 │   │   └── geometry.py          # Vectorized pairwise loss-of-separation geometry
 │   ├── data/
@@ -59,7 +62,7 @@ atc-conflict-advisory/
 │       ├── baseline.py          # 3-step finite difference & smoothed CV predictors
 │       ├── lstm_predictor.py    # Zero-initialized residual trajectory inference wrapper
 │       └── train_lstm.py        # PyTorch training loop with validation early stopping
-├── tests/                       # Comprehensive pytest suite (42 unit & integration tests)
+├── tests/                       # Comprehensive pytest suite (101 unit & integration tests)
 ├── REPORT.md                    # Consolidated research findings & limitations
 └── README.md                    # Project documentation & execution guide
 ```
@@ -82,7 +85,7 @@ pip install -r requirements.txt
 
 ### 5.1 Running Unit & Regression Tests
 
-Run all 42 tests in the suite:
+Run all unit & regression tests in the suite:
 ```bash
 pytest -v
 ```
@@ -148,6 +151,29 @@ python3 -u -m src.data.live_collector --duration-minutes 20.0 --interval 12.0 --
 Evaluate baseline and LSTM position prediction errors on the live-collected sample:
 ```bash
 python3 -m src.eval.run_opensky_eval --data-dir data/opensky_live_sample --checkpoint checkpoints/lstm_v1/best.pt
+```
+
+### 5.7 Conflict Advisory Agent (Python API)
+
+Run end-to-end conflict advisory assessment on a scenario using the `ConflictAdvisoryAgent`:
+
+```python
+from pathlib import Path
+from src.agent import ConflictAdvisoryAgent
+from src.models.baseline import SmoothedConstantVelocityPredictor
+
+# Initialize predictor and advisory agent
+predictor = SmoothedConstantVelocityPredictor()
+agent = ConflictAdvisoryAgent(predictor)
+
+# Run advisory assessment on a scenario parquet or DataFrame
+report = agent.advise_file(Path("data/synthetic_hard/scenario_000042.parquet"))
+
+print(f"Scenario: {report.scenario_id}")
+print(f"Has Conflict: {report.has_conflict}")
+print(f"Max Risk Index: {report.max_p_risk:.3f}")
+print(f"Earliest Lead Time: {report.earliest_lead_time_s} s")
+print(f"Flagged Pairs: {report.flagged_pairs}")
 ```
 
 ---
