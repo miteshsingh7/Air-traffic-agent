@@ -153,7 +153,42 @@ python3 -m src.eval.run_opensky_eval --data-dir data/opensky_live_sample --check
 
 ---
 
-## 6. Key Research Findings & Limitations
+## 6. Research Console (Web UI)
+
+The **AeroMetrics Conflict Research Console** is an offline, data-driven single-page research workstation for visualizing high-density encounters, evaluating loss-of-separation (LoS) prediction performance, and exploring tactical conflict resolution advisories. It faithfully implements the research dashboard specification with zero mock or placeholder figures.
+
+> **CRITICAL ADVISORY DISCLAIMER**:
+> The Research Console displays a persistent amber banner on every view:
+> **RESEARCH SIMULATION — ADVISORY ONLY — NOT FOR OPERATIONAL USE**.
+> It is an offline evaluation platform and must never be connected to operational ATC infrastructure.
+
+### 6.1 Launching the Console
+
+Start the Uvicorn ASGI server hosting the FastAPI backend:
+```bash
+python3 -m uvicorn src.ui.app:app --host 127.0.0.1 --port 8000
+```
+Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your web browser.
+
+### 6.2 REST API Specification
+
+All backend endpoints are served under `/api/`:
+
+| Endpoint | Method | Parameters | Description |
+|---|---|---|---|
+| `/api/system` | `GET` | None | Returns active PyTorch compute device (`MPS`, `CUDA`, `CPU`), dataset random seeds, separation minima (5.0 NM, 1000 ft), observation/look-ahead horizons, and safety disclaimer. |
+| `/api/datasets` | `GET` | None | Lists available datasets (`hard_v1`, `hard_large`, `easy`, `opensky`) with scenario counts, disk sizes, and split manifests. |
+| `/api/scenarios` | `GET` | `dataset` (str), `split` (str, default `test`) | Enumerates scenarios in the given split with conflict presence flags, trajectory tags (e.g., `MANEUVERING`, `NEAR_MISS`, `NOMINAL`), and aircraft counts. |
+| `/api/scenario/{id}` | `GET` | `dataset` (str), `split` (str), `model` (str, default `cv_smoothed`), `origin` (float, default `60.0`) | Returns comprehensive per-scenario discrete telemetry (t, ACID, altitude, GS, heading, ROCD, x, y), predicted future positions across all aircraft, pairwise closest point of approach (CPA), time-to-CPA ($\tau$), closure rate, and collision risk index $P(\text{risk})$. |
+| `/api/metrics` | `GET` | `dataset` (str), `split` (str), `model` (str) | Computes and returns multi-horizon trajectory position RMSE (30s, 60s, 120s, 180s, 240s, 300s) and pairwise conflict classification performance (TP, FP, FN, TN, precision, recall, F1, false alarms per 1,000 negatives, lead-time distribution, and TTC MAE). |
+
+### 6.3 Live Metric Computation Guarantee
+
+**All metrics returned by `/api/metrics` are computed live** via `run_test_evaluation()` from `src.eval.run_baseline`—the exact same evaluation engine used by the command-line benchmarks. There are **zero hardcoded metric dictionaries or shortcut lookups**. Computed results are cached in-memory solely to avoid redundant recalculation across rapid UI view switches.
+
+---
+
+## 7. Key Research Findings & Limitations
 
 For complete benchmark tables, bootstrap confidence intervals, and failure analysis, see [`REPORT.md`](file:///Users/miteshsingh/Documents/projects/Air-Traffic%20Conflict-Risk%20Advisory%20Agent/REPORT.md).
 

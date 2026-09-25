@@ -15,7 +15,7 @@ import torch
 
 from src.eval.run_baseline import run_test_evaluation
 from src.ui.app import app
-from src.ui.service import get_torch_device
+from src.ui.service import get_torch_device, get_benchmark_metrics
 
 client = TestClient(app)
 
@@ -105,33 +105,93 @@ def test_scenario_detail_endpoint():
     assert "p_risk" in pair
 
 
-def test_metrics_endpoint_parity_with_run_baseline():
-    """Verify /api/metrics identically matches run_test_evaluation CLI output for hard_v1 test."""
-    resp = client.get("/api/metrics?dataset=hard_v1&split=test&model=cv_smoothed")
+@pytest.mark.parametrize(
+    "dataset,split,model,eval_variant,eval_model,eval_ckpt",
+    [
+        ("hard_v1", "test", "cv_smoothed", "hard", "cv_smoothed", None),
+        ("hard_large", "test", "lstm_v1", "hard_large", "lstm", "checkpoints/lstm_v1/best.pt"),
+        ("hard_v1", "val", "cv_smoothed", "hard", "cv_smoothed", None),
+    ],
+)
+def test_metrics_endpoint_parity_with_run_baseline(
+    dataset: str,
+    split: str,
+    model: str,
+    eval_variant: str,
+    eval_model: str,
+    eval_ckpt: str | None,
+):
+    """Verify /api/metrics dynamically computes and identically matches run_test_evaluation."""
+    # Independently compute ground truth via run_test_evaluation
+    pos_metrics, conf = run_test_evaluation(
+        variant=eval_variant,
+        model_name=eval_model,
+        checkpoint=eval_ckpt,
+        split=split,
+    )
+
+    resp = client.get(f"/api/metrics?dataset={dataset}&split={split}&model={model}")
     assert resp.status_code == 200
     api_metrics = resp.json()
 
-    # Compare with known hard_v1 TEST cv_smoothed evaluation
-    assert round(api_metrics["precision"], 4) == 0.9107
-    assert round(api_metrics["recall"], 4) == 0.8226
-    assert round(api_metrics["f1_score"], 4) == 0.8644
-    assert api_metrics["true_positives"] == 153
-    assert api_metrics["false_positives"] == 15
-    assert api_metrics["false_negatives"] == 33
-    assert api_metrics["true_negatives"] == 23840
-    assert api_metrics["total_samples"] == 24041
-    assert round(api_metrics["false_alarms_per_1000_negatives"], 2) == 0.63
-    assert round(api_metrics["tp_time_to_conflict_mae_s"], 2) == 0.92
+    # Exact sample & confusion matrix parity
+    assert api_metrics["true_positives"] == conf.true_positives
+    assert api_metrics["false_positives"] == conf.false_positives
+    assert api_metrics["false_negatives"] == conf.false_negatives
+    assert api_metrics["true_negatives"] == conf.true_negatives
+    assert api_metrics["total_samples"] == conf.total_samples
 
-    # Also test lstm_v1 model switching
-    resp_lstm = client.get("/api/metrics?dataset=hard_v1&split=test&model=lstm_v1")
-    assert resp_lstm.status_code == 200
-    lstm_metrics = resp_lstm.json()
-    assert round(lstm_metrics["precision"], 4) == 1.0000
-    assert round(lstm_metrics["recall"], 4) == 0.8280
-    assert round(lstm_metrics["f1_score"], 4) == 0.9059
-    assert lstm_metrics["true_positives"] == 154
-    assert lstm_metrics["false_positives"] == 0
+    # Rate metric parity
+    assert api_metrics["precision"] == pytest.approx(round(conf.precision, 4), abs=1e-4)
+    assert api_metrics["recall"] == pytest.approx(round(conf.recall, 4), abs=1e-4)
+    assert api_metrics["f1_score"] == pytest.approx(round(conf.f1_score, 4), abs=1e-4)
+    assert api_metrics["false_alarms_per_1000_negatives"] == pytest.approx(
+        round(conf.false_alarms_per_1000_negatives, 2), abs=1e-2
+    )
+
+    # Position RMSE parity
+    for m in pos_metrics:
+        h_str = str(m.horizon_s)
+        assert h_str in api_metrics["position_rmse"]
+        assert api_metrics["position_rmse"][h_str]["horizontal_nm"] == pytest.approx(
+            round(m.horizontal_rmse_nm, 4), abs=1e-4
+        )
+        assert api_metrics["position_rmse"][h_str]["vertical_ft"] == pytest.approx(
+            round(m.vertical_rmse_ft, 2), abs=1e-2
+        )
+
+
+@pytest.fixture(scope="module")
+def real_positive_samples() -> dict[str, int]:
+    """Compute true ground-truth positive-sample counts independently via run_test_evaluation."""
+    samples = {}
+    for ds, var in [("easy", "easy"), ("hard_v1", "hard"), ("hard_large", "hard_large")]:
+        _, conf = run_test_evaluation(variant=var, model_name="cv_smoothed", split="test")
+        samples[ds] = conf.positive_samples
+    return samples
+
+
+@pytest.mark.parametrize("dataset", ["easy", "hard_v1", "hard_large"])
+@pytest.mark.parametrize("model_name", ["cv_3step", "cv_smoothed", "lstm_v1"])
+def test_no_hardcoded_numeric_shortcuts(
+    dataset: str, model_name: str, real_positive_samples: dict[str, int]
+):
+    """Verify get_benchmark_metrics traces back to live evaluation with no shortcuts.
+
+    Covers 3 datasets x 3 models on the test split (9 calls), proving each result's
+    TP + FN strictly equals the real ground-truth positive-sample count computed
+    independently via run_test_evaluation.
+    """
+    # Call service layer (computes live via run_test_evaluation and caches in _METRICS_CACHE)
+    res = get_benchmark_metrics(dataset=dataset, split="test", model_name=model_name)
+
+    # Prove live computation: TP + FN must strictly equal ground truth positive samples
+    expected_positives = real_positive_samples[dataset]
+    assert res["true_positives"] + res["false_negatives"] == expected_positives
+    assert res["total_samples"] > 0
+    assert res["true_positives"] > 0
+    assert res["true_negatives"] > 0
+
 
 
 def test_static_html_no_stitch_placeholders():

@@ -530,217 +530,57 @@ def get_benchmark_metrics(
     split: str = "test",
     model_name: str = "cv_smoothed",
 ) -> dict[str, Any]:
-    """Retrieve verified benchmark evaluation metrics for given dataset, split, and model."""
+    """Retrieve benchmark evaluation metrics for given dataset, split, and model.
+
+    Always computes metrics live via run_test_evaluation with no hardcoded shortcuts.
+    Results are cached in-memory in _METRICS_CACHE.
+    """
     cache_key = f"{dataset}_{split}_{model_name}"
     if cache_key in _METRICS_CACHE:
         return _METRICS_CACHE[cache_key]
 
-    # Pre-calculated official project numbers from REPORT.md and test runs for instantaneous switching
-    # Guaranteed identical to run_test_evaluation CLI
-    if dataset in ("hard_large", "large") and split == "test":
-        if model_name in ("lstm_v1", "lstm"):
-            res = {
-                "dataset": "hard_large",
-                "split": "test",
-                "model_name": "lstm_v1",
-                "precision": 0.9958,
-                "recall": 0.8947,
-                "f1_score": 0.9425,
-                "false_alarms_per_1000_negatives": 0.04,
-                "mean_lead_time_s": 142.6,
-                "tp_time_to_conflict_mae_s": 1.03,
-                "true_positives": 1427,
-                "false_positives": 6,
-                "false_negatives": 168,
-                "true_negatives": 153897,
-                "total_samples": 155498,
-                "position_rmse": {
-                    30: {"horizontal_nm": 0.0979, "vertical_ft": 34.53},
-                    60: {"horizontal_nm": 0.2526, "vertical_ft": 59.40},
-                    120: {"horizontal_nm": 0.6907, "vertical_ft": 93.98},
-                    180: {"horizontal_nm": 1.2555, "vertical_ft": 117.78},
-                    240: {"horizontal_nm": 1.9233, "vertical_ft": 135.33},
-                    300: {"horizontal_nm": 2.6798, "vertical_ft": 148.90},
-                },
-                "latency_ms": 3.8,
-            }
-        elif model_name in ("cv_smoothed", "smoothed"):
-            res = {
-                "dataset": "hard_large",
-                "split": "test",
-                "model_name": "cv_smoothed",
-                "precision": 0.9609,
-                "recall": 0.8639,
-                "f1_score": 0.9099,
-                "false_alarms_per_1000_negatives": 0.36,
-                "mean_lead_time_s": 142.6,
-                "tp_time_to_conflict_mae_s": 0.94,
-                "true_positives": 1378,
-                "false_positives": 56,
-                "false_negatives": 217,
-                "true_negatives": 153847,
-                "total_samples": 155498,
-                "position_rmse": {
-                    30: {"horizontal_nm": 0.1690, "vertical_ft": 65.72},
-                    60: {"horizontal_nm": 0.3545, "vertical_ft": 108.15},
-                    120: {"horizontal_nm": 0.8359, "vertical_ft": 189.22},
-                    180: {"horizontal_nm": 1.4344, "vertical_ft": 267.48},
-                    240: {"horizontal_nm": 2.1312, "vertical_ft": 344.94},
-                    300: {"horizontal_nm": 2.9138, "vertical_ft": 421.58},
-                },
-                "latency_ms": 0.5,
-            }
-        else:
-            res = {
-                "dataset": "hard_large",
-                "split": "test",
-                "model_name": "cv_3step",
-                "precision": 0.7237,
-                "recall": 0.5467,
-                "f1_score": 0.6229,
-                "false_alarms_per_1000_negatives": 2.16,
-                "mean_lead_time_s": 120.0,
-                "tp_time_to_conflict_mae_s": 2.23,
-                "true_positives": 872,
-                "false_positives": 333,
-                "false_negatives": 723,
-                "true_negatives": 153570,
-                "total_samples": 155498,
-                "position_rmse": {
-                    30: {"horizontal_nm": 0.2215, "vertical_ft": 92.40},
-                    60: {"horizontal_nm": 0.4630, "vertical_ft": 148.20},
-                    120: {"horizontal_nm": 1.0520, "vertical_ft": 254.60},
-                    180: {"horizontal_nm": 1.7890, "vertical_ft": 352.10},
-                    240: {"horizontal_nm": 2.6140, "vertical_ft": 448.90},
-                    300: {"horizontal_nm": 3.5210, "vertical_ft": 542.80},
-                },
-                "latency_ms": 0.2,
-            }
-        _METRICS_CACHE[cache_key] = res
-        return res
+    # Map dataset ID to variant consistently with _resolve_dataset_paths
+    if dataset in ("hard_large", "large"):
+        variant = "hard_large"
+    elif dataset in ("hard_v1", "hard"):
+        variant = "hard"
+    elif dataset in ("easy", "nominal"):
+        variant = "easy"
+    else:
+        raise ValueError(f"Unknown dataset '{dataset}'")
 
-    elif dataset in ("hard_v1", "hard") and split == "test":
-        if model_name in ("lstm_v1", "lstm"):
-            res = {
-                "dataset": "hard_v1",
-                "split": "test",
-                "model_name": "lstm_v1",
-                "precision": 1.0000,
-                "recall": 0.8280,
-                "f1_score": 0.9059,
-                "false_alarms_per_1000_negatives": 0.00,
-                "mean_lead_time_s": 120.0,
-                "tp_time_to_conflict_mae_s": 0.65,
-                "true_positives": 154,
-                "false_positives": 0,
-                "false_negatives": 32,
-                "true_negatives": 23855,
-                "total_samples": 24041,
-                "position_rmse": {
-                    30: {"horizontal_nm": 0.0953, "vertical_ft": 33.71},
-                    60: {"horizontal_nm": 0.2465, "vertical_ft": 56.86},
-                    120: {"horizontal_nm": 0.6824, "vertical_ft": 87.89},
-                    180: {"horizontal_nm": 1.2462, "vertical_ft": 109.73},
-                    240: {"horizontal_nm": 1.9109, "vertical_ft": 125.81},
-                    300: {"horizontal_nm": 2.6582, "vertical_ft": 138.63},
-                },
-                "latency_ms": 3.9,
-            }
-        elif model_name in ("cv_smoothed", "smoothed"):
-            res = {
-                "dataset": "hard_v1",
-                "split": "test",
-                "model_name": "cv_smoothed",
-                "precision": 0.9107,
-                "recall": 0.8226,
-                "f1_score": 0.8644,
-                "false_alarms_per_1000_negatives": 0.63,
-                "mean_lead_time_s": 120.0,
-                "tp_time_to_conflict_mae_s": 0.92,
-                "true_positives": 153,
-                "false_positives": 15,
-                "false_negatives": 33,
-                "true_negatives": 23840,
-                "total_samples": 24041,
-                "position_rmse": {
-                    30: {"horizontal_nm": 0.1651, "vertical_ft": 64.15},
-                    60: {"horizontal_nm": 0.3480, "vertical_ft": 103.90},
-                    120: {"horizontal_nm": 0.8267, "vertical_ft": 179.77},
-                    180: {"horizontal_nm": 1.4234, "vertical_ft": 253.25},
-                    240: {"horizontal_nm": 2.1167, "vertical_ft": 326.32},
-                    300: {"horizontal_nm": 2.8899, "vertical_ft": 398.66},
-                },
-                "latency_ms": 0.5,
-            }
-        else:
-            res = {
-                "dataset": "hard_v1",
-                "split": "test",
-                "model_name": "cv_3step",
-                "precision": 0.5808,
-                "recall": 0.5215,
-                "f1_score": 0.5496,
-                "false_alarms_per_1000_negatives": 2.93,
-                "mean_lead_time_s": 65.0,
-                "tp_time_to_conflict_mae_s": 1.65,
-                "true_positives": 97,
-                "false_positives": 70,
-                "false_negatives": 89,
-                "true_negatives": 23785,
-                "total_samples": 24041,
-                "position_rmse": {
-                    30: {"horizontal_nm": 0.2180, "vertical_ft": 90.10},
-                    60: {"horizontal_nm": 0.4550, "vertical_ft": 144.50},
-                    120: {"horizontal_nm": 1.0380, "vertical_ft": 248.30},
-                    180: {"horizontal_nm": 1.7650, "vertical_ft": 343.20},
-                    240: {"horizontal_nm": 2.5800, "vertical_ft": 438.10},
-                    300: {"horizontal_nm": 3.4750, "vertical_ft": 530.20},
-                },
-                "latency_ms": 0.2,
-            }
-        _METRICS_CACHE[cache_key] = res
-        return res
+    # Map model name
+    if model_name in ("lstm_v1", "lstm"):
+        model_arg = "lstm"
+        checkpoint: str | None = str(CHECKPOINT_PATH)
+    elif model_name in ("cv_smoothed", "smoothed"):
+        model_arg = "cv_smoothed"
+        checkpoint = None
+    elif model_name in ("cv_3step", "cv", "baseline"):
+        model_arg = "cv_3step"
+        checkpoint = None
+    else:
+        model_arg = model_name
+        checkpoint = None
 
-    elif dataset in ("easy", "nominal") and split == "test":
-        res = {
-            "dataset": "easy",
-            "split": "test",
-            "model_name": model_name,
-            "precision": 0.9794,
-            "recall": 1.0000,
-            "f1_score": 0.9896,
-            "false_alarms_per_1000_negatives": 0.10,
-            "mean_lead_time_s": 180.0,
-            "tp_time_to_conflict_mae_s": 0.00,
-            "true_positives": 95,
-            "false_positives": 2,
-            "false_negatives": 0,
-            "true_negatives": 19500,
-            "total_samples": 19597,
-            "position_rmse": {
-                30: {"horizontal_nm": 0.0000, "vertical_ft": 0.00},
-                60: {"horizontal_nm": 0.0000, "vertical_ft": 0.00},
-                120: {"horizontal_nm": 0.0000, "vertical_ft": 0.00},
-                180: {"horizontal_nm": 0.0000, "vertical_ft": 0.00},
-                240: {"horizontal_nm": 0.0000, "vertical_ft": 0.00},
-                300: {"horizontal_nm": 0.0000, "vertical_ft": 0.00},
-            },
-            "latency_ms": 0.4,
-        }
-        _METRICS_CACHE[cache_key] = res
-        return res
-
-    # Otherwise fallback to live evaluation
-    variant = "hard" if "hard" in dataset else "easy"
-    ckpt = str(CHECKPOINT_PATH) if "lstm" in model_name else None
+    t0 = time.perf_counter()
     metrics_list, conf = run_test_evaluation(
         variant=variant,
-        model_name="lstm" if "lstm" in model_name else model_name,
-        checkpoint=ckpt,
+        model_name=model_arg,
+        checkpoint=checkpoint,
         split=split,
     )
-    pos_map = {m.horizon_s: {"horizontal_nm": round(m.horizontal_rmse_nm, 4), "vertical_ft": round(m.vertical_rmse_ft, 2)} for m in metrics_list}
-    live_res = {
+    elapsed_ms = (time.perf_counter() - t0) * 1000.0
+
+    pos_map = {
+        m.horizon_s: {
+            "horizontal_nm": round(m.horizontal_rmse_nm, 4),
+            "vertical_ft": round(m.vertical_rmse_ft, 2),
+        }
+        for m in metrics_list
+    }
+
+    result = {
         "dataset": dataset,
         "split": split,
         "model_name": model_name,
@@ -748,15 +588,16 @@ def get_benchmark_metrics(
         "recall": round(conf.recall, 4),
         "f1_score": round(conf.f1_score, 4),
         "false_alarms_per_1000_negatives": round(conf.false_alarms_per_1000_negatives, 2),
-        "mean_lead_time_s": round(conf.tp_lead_time_median_s or 120.0, 1),
-        "tp_time_to_conflict_mae_s": round(conf.tp_time_to_conflict_mae_s or 0.0, 2),
+        "mean_lead_time_s": round(conf.tp_lead_time_median_s if conf.tp_lead_time_median_s is not None else 0.0, 1),
+        "tp_time_to_conflict_mae_s": round(conf.tp_time_to_conflict_mae_s if conf.tp_time_to_conflict_mae_s is not None else 0.0, 2),
         "true_positives": conf.true_positives,
         "false_positives": conf.false_positives,
         "false_negatives": conf.false_negatives,
         "true_negatives": conf.true_negatives,
         "total_samples": conf.total_samples,
         "position_rmse": pos_map,
-        "latency_ms": 1.2,
+        "latency_ms": round(elapsed_ms / max(conf.total_samples, 1), 3),
     }
-    _METRICS_CACHE[cache_key] = live_res
-    return live_res
+    _METRICS_CACHE[cache_key] = result
+    return result
+
