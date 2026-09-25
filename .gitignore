@@ -36,13 +36,19 @@ htmlcov/
 *.swp
 *.swo
 
-# Large data files — exclude raw parquet scenarios (too large for GitHub)
-# Splits JSON and metadata JSON are committed (small, required for repo usability)
-data/synthetic/
-data/synthetic_hard/
-data/synthetic_hard_large/
-data/opensky_live_sample/
+# Data directory: ignore generated caches and bulk scenario parquets
 data/cache/
+data/**/*.parquet
+
+# Whitelist curated sample scenarios for out-of-the-box UI & test execution on fresh clone
+!data/synthetic/scenario_0006.parquet
+!data/synthetic/scenario_0014.parquet
+!data/synthetic_hard/scenario_0012.parquet
+!data/synthetic_hard/scenario_0018.parquet
+!data/synthetic_hard/scenario_0034.parquet
+!data/synthetic_hard_large/scenario_0003.parquet
+!data/synthetic_hard_large/scenario_0015.parquet
+!data/opensky_live_sample/opensky_live_040262.parquet
 
 # Scratch files
 scratch/

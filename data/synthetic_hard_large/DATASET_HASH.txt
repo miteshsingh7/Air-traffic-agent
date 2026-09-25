@@ -1,0 +1,17 @@
+dataset_name: hard_large
+dataset_variant: hard
+seed: 2042
+scenario_count: 3000
+parquet_file_count: 3000
+lateral_min_nm: 5.0
+vertical_min_ft: 1000.0
+resample_rate_s: 5.0
+history_s: 60.0
+horizon_s: 300.0
+scenario_duration_s: 1200.0
+maneuver_conflict_prob: 0.5
+near_miss_scenario_prob: 0.25
+noise_sigma_horizontal_nm: 0.02
+noise_sigma_vertical_ft: 50.0
+sha256: a8d690795d54f3e3fb3aa2e53090b1724bb22910c923290bffec9f1061b8812d
+content_sha256: ae5fdd75451239f85b67b3c708659bcfe2bd3809800eb632db8d3d65afc8a926

@@ -1,0 +1,4002 @@
+{
+  "scenario_0000": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.1364,
+    "near_miss_closest_vertical_ft": 316.5
+  },
+  "scenario_0001": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0002": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0003": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.1793,
+    "near_miss_closest_vertical_ft": 294.6
+  },
+  "scenario_0004": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0005": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0006": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0007": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0008": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0009": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0010": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 7.9295,
+    "near_miss_closest_vertical_ft": 65.6
+  },
+  "scenario_0011": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0012": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.0587,
+    "near_miss_closest_vertical_ft": 1505.2
+  },
+  "scenario_0013": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0014": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0015": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.5146,
+    "near_miss_closest_vertical_ft": 315.0
+  },
+  "scenario_0016": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0017": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0018": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1957,
+    "near_miss_closest_vertical_ft": 1492.9
+  },
+  "scenario_0019": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.2326,
+    "near_miss_closest_vertical_ft": 1336.9
+  },
+  "scenario_0020": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0021": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.7602,
+    "near_miss_closest_vertical_ft": 1638.1
+  },
+  "scenario_0022": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.8929,
+    "near_miss_closest_vertical_ft": 1583.8
+  },
+  "scenario_0023": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.0587,
+    "near_miss_closest_vertical_ft": 1610.5
+  },
+  "scenario_0024": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0025": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0026": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 3.1882,
+    "near_miss_closest_vertical_ft": 1517.9
+  },
+  "scenario_0027": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0028": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.4963,
+    "near_miss_closest_vertical_ft": 1476.6
+  },
+  "scenario_0029": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.0815,
+    "near_miss_closest_vertical_ft": 365.1
+  },
+  "scenario_0030": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0031": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0032": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0033": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0034": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0035": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0036": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0037": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0038": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0039": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 7.5665,
+    "near_miss_closest_vertical_ft": 52.9
+  },
+  "scenario_0040": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0041": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0042": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0043": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0044": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0045": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0046": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0047": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0048": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0049": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0050": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0051": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0052": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0053": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0054": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0055": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0056": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.371,
+    "near_miss_closest_vertical_ft": 1197.8
+  },
+  "scenario_0057": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0058": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.5728,
+    "near_miss_closest_vertical_ft": 390.3
+  },
+  "scenario_0059": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0060": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0061": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0062": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0063": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.5858,
+    "near_miss_closest_vertical_ft": 123.0
+  },
+  "scenario_0064": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1567,
+    "near_miss_closest_vertical_ft": 1273.7
+  },
+  "scenario_0065": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.1924,
+    "near_miss_closest_vertical_ft": 190.5
+  },
+  "scenario_0066": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0067": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0068": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0069": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.9468,
+    "near_miss_closest_vertical_ft": 224.0
+  },
+  "scenario_0070": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0071": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0072": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0073": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0074": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0075": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0076": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0077": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0078": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0079": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1665,
+    "near_miss_closest_vertical_ft": 1392.7
+  },
+  "scenario_0080": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0081": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.3525,
+    "near_miss_closest_vertical_ft": 1651.3
+  },
+  "scenario_0082": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0083": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.8976,
+    "near_miss_closest_vertical_ft": 1568.7
+  },
+  "scenario_0084": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.5741,
+    "near_miss_closest_vertical_ft": 1207.7
+  },
+  "scenario_0085": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0086": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0087": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0088": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.9933,
+    "near_miss_closest_vertical_ft": 26.0
+  },
+  "scenario_0089": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0090": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0091": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0092": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0093": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0094": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0095": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0096": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0097": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.125,
+    "near_miss_closest_vertical_ft": 66.6
+  },
+  "scenario_0098": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0099": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0100": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0101": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0102": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0103": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0104": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0105": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.9317,
+    "near_miss_closest_vertical_ft": 1216.0
+  },
+  "scenario_0106": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.3523,
+    "near_miss_closest_vertical_ft": 1595.6
+  },
+  "scenario_0107": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0108": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.5452,
+    "near_miss_closest_vertical_ft": 1389.1
+  },
+  "scenario_0109": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0110": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0111": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.3182,
+    "near_miss_closest_vertical_ft": 353.1
+  },
+  "scenario_0112": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0113": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0114": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0115": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0116": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.7305,
+    "near_miss_closest_vertical_ft": 1449.3
+  },
+  "scenario_0117": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0118": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.6813,
+    "near_miss_closest_vertical_ft": 196.8
+  },
+  "scenario_0119": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0120": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0121": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0122": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0123": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0124": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0125": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.4758,
+    "near_miss_closest_vertical_ft": 1758.6
+  },
+  "scenario_0126": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.6851,
+    "near_miss_closest_vertical_ft": 48.0
+  },
+  "scenario_0127": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 8.0665,
+    "near_miss_closest_vertical_ft": 112.2
+  },
+  "scenario_0128": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0129": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1911,
+    "near_miss_closest_vertical_ft": 1563.7
+  },
+  "scenario_0130": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0131": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.6787,
+    "near_miss_closest_vertical_ft": 1550.7
+  },
+  "scenario_0132": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0133": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0134": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0135": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0136": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0137": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0138": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.5222,
+    "near_miss_closest_vertical_ft": 1176.4
+  },
+  "scenario_0139": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0140": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0141": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0142": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0143": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0144": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0145": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0146": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0147": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0148": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0149": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0150": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1107,
+    "near_miss_closest_vertical_ft": 1534.1
+  },
+  "scenario_0151": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0152": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0153": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.0834,
+    "near_miss_closest_vertical_ft": 363.6
+  },
+  "scenario_0154": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0155": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0156": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0157": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 7.5464,
+    "near_miss_closest_vertical_ft": 183.5
+  },
+  "scenario_0158": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0159": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0160": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0161": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0162": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0163": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0164": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0165": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0166": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0167": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.2111,
+    "near_miss_closest_vertical_ft": 1761.2
+  },
+  "scenario_0168": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0169": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0170": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.0521,
+    "near_miss_closest_vertical_ft": 310.9
+  },
+  "scenario_0171": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.8828,
+    "near_miss_closest_vertical_ft": 220.5
+  },
+  "scenario_0172": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0173": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0174": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0175": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0176": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.3957,
+    "near_miss_closest_vertical_ft": 1683.4
+  },
+  "scenario_0177": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0178": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0179": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0180": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0181": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0182": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0183": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0184": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.4756,
+    "near_miss_closest_vertical_ft": 1498.0
+  },
+  "scenario_0185": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.4156,
+    "near_miss_closest_vertical_ft": 1786.4
+  },
+  "scenario_0186": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0187": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0188": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.2133,
+    "near_miss_closest_vertical_ft": 1490.0
+  },
+  "scenario_0189": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0190": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0191": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.7643,
+    "near_miss_closest_vertical_ft": 235.6
+  },
+  "scenario_0192": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0193": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0194": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0195": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.2681,
+    "near_miss_closest_vertical_ft": 202.9
+  },
+  "scenario_0196": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0197": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0198": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.4898,
+    "near_miss_closest_vertical_ft": 341.9
+  },
+  "scenario_0199": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.0396,
+    "near_miss_closest_vertical_ft": 1333.8
+  },
+  "scenario_0200": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0201": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0202": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0203": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0204": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0205": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 3.4167,
+    "near_miss_closest_vertical_ft": 1693.9
+  },
+  "scenario_0206": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0207": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0208": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0209": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0210": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0211": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0212": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0213": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0214": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0215": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0216": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0217": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0218": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0219": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.218,
+    "near_miss_closest_vertical_ft": 100.7
+  },
+  "scenario_0220": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0221": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.6694,
+    "near_miss_closest_vertical_ft": 1283.7
+  },
+  "scenario_0222": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0223": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0224": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0225": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.3141,
+    "near_miss_closest_vertical_ft": 259.2
+  },
+  "scenario_0226": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0227": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0228": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.2844,
+    "near_miss_closest_vertical_ft": 1168.1
+  },
+  "scenario_0229": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0230": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0231": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0232": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0233": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0234": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0235": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.9851,
+    "near_miss_closest_vertical_ft": 1650.0
+  },
+  "scenario_0236": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0237": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0238": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0239": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0240": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0241": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0242": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.1676,
+    "near_miss_closest_vertical_ft": 1238.0
+  },
+  "scenario_0243": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0244": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0245": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.4177,
+    "near_miss_closest_vertical_ft": 1284.1
+  },
+  "scenario_0246": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0247": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0248": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0249": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0250": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0251": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.799,
+    "near_miss_closest_vertical_ft": 86.3
+  },
+  "scenario_0252": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0253": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0254": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0255": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0256": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0257": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.11,
+    "near_miss_closest_vertical_ft": 1571.8
+  },
+  "scenario_0258": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0259": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0260": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.8746,
+    "near_miss_closest_vertical_ft": 1525.9
+  },
+  "scenario_0261": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.9362,
+    "near_miss_closest_vertical_ft": 1400.6
+  },
+  "scenario_0262": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0263": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0264": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0265": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0266": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0267": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0268": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0269": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0270": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0271": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0272": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0273": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0274": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0275": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.2355,
+    "near_miss_closest_vertical_ft": 1597.9
+  },
+  "scenario_0276": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0277": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.8228,
+    "near_miss_closest_vertical_ft": 50.8
+  },
+  "scenario_0278": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0279": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0280": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0281": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0282": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0283": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.798,
+    "near_miss_closest_vertical_ft": 1588.6
+  },
+  "scenario_0284": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0285": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0286": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.7411,
+    "near_miss_closest_vertical_ft": 1163.1
+  },
+  "scenario_0287": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0288": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0289": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.4432,
+    "near_miss_closest_vertical_ft": 145.6
+  },
+  "scenario_0290": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0291": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0292": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0293": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.4636,
+    "near_miss_closest_vertical_ft": 395.6
+  },
+  "scenario_0294": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.2266,
+    "near_miss_closest_vertical_ft": 322.5
+  },
+  "scenario_0295": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.6028,
+    "near_miss_closest_vertical_ft": 1340.2
+  },
+  "scenario_0296": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0297": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0298": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0299": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 8.3882,
+    "near_miss_closest_vertical_ft": 365.0
+  },
+  "scenario_0300": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0301": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0302": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1023,
+    "near_miss_closest_vertical_ft": 1378.3
+  },
+  "scenario_0303": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0304": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0305": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0306": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0307": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0308": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0309": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 7.7467,
+    "near_miss_closest_vertical_ft": 380.1
+  },
+  "scenario_0310": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0311": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.4452,
+    "near_miss_closest_vertical_ft": 265.6
+  },
+  "scenario_0312": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0313": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0314": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0315": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.7372,
+    "near_miss_closest_vertical_ft": 166.3
+  },
+  "scenario_0316": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.4749,
+    "near_miss_closest_vertical_ft": 1188.8
+  },
+  "scenario_0317": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.934,
+    "near_miss_closest_vertical_ft": 1231.6
+  },
+  "scenario_0318": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.5374,
+    "near_miss_closest_vertical_ft": 1269.1
+  },
+  "scenario_0319": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0320": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0321": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0322": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0323": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0324": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0325": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0326": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0327": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0328": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0329": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0330": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.603,
+    "near_miss_closest_vertical_ft": 158.4
+  },
+  "scenario_0331": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.7618,
+    "near_miss_closest_vertical_ft": 98.0
+  },
+  "scenario_0332": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.5561,
+    "near_miss_closest_vertical_ft": 1156.5
+  },
+  "scenario_0333": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0334": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0335": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0336": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0337": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0338": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0339": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 7.4177,
+    "near_miss_closest_vertical_ft": 390.9
+  },
+  "scenario_0340": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0341": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0342": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0343": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.4775,
+    "near_miss_closest_vertical_ft": 377.7
+  },
+  "scenario_0344": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.121,
+    "near_miss_closest_vertical_ft": 1574.7
+  },
+  "scenario_0345": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0346": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0347": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0348": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.3355,
+    "near_miss_closest_vertical_ft": 1301.4
+  },
+  "scenario_0349": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0350": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.9286,
+    "near_miss_closest_vertical_ft": 1564.9
+  },
+  "scenario_0351": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0352": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0353": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0354": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0355": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.2184,
+    "near_miss_closest_vertical_ft": 1490.4
+  },
+  "scenario_0356": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0357": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0358": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0359": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.8898,
+    "near_miss_closest_vertical_ft": 1719.4
+  },
+  "scenario_0360": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.5076,
+    "near_miss_closest_vertical_ft": 1199.3
+  },
+  "scenario_0361": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0362": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0363": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0364": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0365": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0366": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0367": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.8111,
+    "near_miss_closest_vertical_ft": 138.5
+  },
+  "scenario_0368": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0369": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0370": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.6811,
+    "near_miss_closest_vertical_ft": 1756.8
+  },
+  "scenario_0371": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0372": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0373": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0374": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.6124,
+    "near_miss_closest_vertical_ft": 1419.9
+  },
+  "scenario_0375": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0376": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0377": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0378": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0379": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0380": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.377,
+    "near_miss_closest_vertical_ft": 1766.6
+  },
+  "scenario_0381": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0382": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0383": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0384": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.6177,
+    "near_miss_closest_vertical_ft": 1656.7
+  },
+  "scenario_0385": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0386": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0387": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0388": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.4597,
+    "near_miss_closest_vertical_ft": 1666.9
+  },
+  "scenario_0389": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0390": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 7.6788,
+    "near_miss_closest_vertical_ft": 188.1
+  },
+  "scenario_0391": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.1668,
+    "near_miss_closest_vertical_ft": 1332.3
+  },
+  "scenario_0392": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0393": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0394": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0395": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0396": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.9685,
+    "near_miss_closest_vertical_ft": 281.8
+  },
+  "scenario_0397": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0398": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0399": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0400": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0401": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0402": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0403": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0404": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.2542,
+    "near_miss_closest_vertical_ft": 1167.9
+  },
+  "scenario_0405": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.4315,
+    "near_miss_closest_vertical_ft": 1748.1
+  },
+  "scenario_0406": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0407": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0408": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0409": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0410": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0411": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.6681,
+    "near_miss_closest_vertical_ft": 357.5
+  },
+  "scenario_0412": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0413": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0414": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.7805,
+    "near_miss_closest_vertical_ft": 238.8
+  },
+  "scenario_0415": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.7019,
+    "near_miss_closest_vertical_ft": 1506.2
+  },
+  "scenario_0416": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0417": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.7959,
+    "near_miss_closest_vertical_ft": 1399.6
+  },
+  "scenario_0418": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.8591,
+    "near_miss_closest_vertical_ft": 1166.6
+  },
+  "scenario_0419": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0420": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0421": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0422": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.4372,
+    "near_miss_closest_vertical_ft": 1676.2
+  },
+  "scenario_0423": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0424": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0425": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0426": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0427": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0428": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0429": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0430": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0431": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 5.7638,
+    "near_miss_closest_vertical_ft": 247.0
+  },
+  "scenario_0432": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0433": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0434": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0435": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.3942,
+    "near_miss_closest_vertical_ft": 1472.2
+  },
+  "scenario_0436": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0437": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0438": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.2667,
+    "near_miss_closest_vertical_ft": 1656.0
+  },
+  "scenario_0439": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0440": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.7656,
+    "near_miss_closest_vertical_ft": 1456.8
+  },
+  "scenario_0441": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0442": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0443": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.4632,
+    "near_miss_closest_vertical_ft": 1606.1
+  },
+  "scenario_0444": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0445": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0446": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0447": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0448": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0449": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0450": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0451": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.6201,
+    "near_miss_closest_vertical_ft": 1519.0
+  },
+  "scenario_0452": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.4073,
+    "near_miss_closest_vertical_ft": 229.2
+  },
+  "scenario_0453": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0454": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0455": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0456": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0457": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0458": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0459": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0460": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0461": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.2903,
+    "near_miss_closest_vertical_ft": 1482.3
+  },
+  "scenario_0462": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0463": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0464": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.1159,
+    "near_miss_closest_vertical_ft": 1286.3
+  },
+  "scenario_0465": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0466": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0467": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0468": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.5759,
+    "near_miss_closest_vertical_ft": 1371.6
+  },
+  "scenario_0469": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0470": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0471": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0472": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0473": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0474": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.6448,
+    "near_miss_closest_vertical_ft": 1542.4
+  },
+  "scenario_0475": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0476": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0477": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0478": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 6.2247,
+    "near_miss_closest_vertical_ft": 21.8
+  },
+  "scenario_0479": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.1889,
+    "near_miss_closest_vertical_ft": 1621.1
+  },
+  "scenario_0480": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0481": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0482": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 1.7818,
+    "near_miss_closest_vertical_ft": 1566.9
+  },
+  "scenario_0483": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0484": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0485": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "climb_level_off",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0486": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0487": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.274,
+    "near_miss_closest_vertical_ft": 1218.2
+  },
+  "scenario_0488": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0489": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0490": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0491": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0492": {
+    "injected_conflict": true,
+    "maneuvering": true,
+    "maneuver_type": "turn",
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0493": {
+    "injected_conflict": true,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0494": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0495": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0496": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 0.3561,
+    "near_miss_closest_vertical_ft": 1169.6
+  },
+  "scenario_0497": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0498": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": false,
+    "near_miss_closest_lateral_nm": null,
+    "near_miss_closest_vertical_ft": null
+  },
+  "scenario_0499": {
+    "injected_conflict": false,
+    "maneuvering": false,
+    "maneuver_type": null,
+    "near_miss": true,
+    "near_miss_closest_lateral_nm": 2.0914,
+    "near_miss_closest_vertical_ft": 1335.5
+  }
+}

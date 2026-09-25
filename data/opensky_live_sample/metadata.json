@@ -1,0 +1,1073 @@
+{
+  "collection_start_utc": "2026-09-25T04:26:47.780521+00:00",
+  "duration_minutes": 20.0,
+  "poll_interval_s": 12.0,
+  "total_polls": 95,
+  "total_raw_observations": 5359,
+  "total_reassembled_tracks": 118,
+  "usable_windows_for_300s_eval": 985,
+  "tracks": [
+    {
+      "scenario_id": "opensky_live_040262",
+      "aircraft_id": "AC_040262",
+      "icao24": "040262",
+      "duration_s": 664.0,
+      "n_points": 133,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_040262.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_06a2ef",
+      "aircraft_id": "AC_06a2ef",
+      "icao24": "06a2ef",
+      "duration_s": 510.0,
+      "n_points": 103,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_06a2ef.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_06a2fd",
+      "aircraft_id": "AC_06a2fd",
+      "icao24": "06a2fd",
+      "duration_s": 331.0,
+      "n_points": 67,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_06a2fd.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3009b7",
+      "aircraft_id": "AC_3009b7",
+      "icao24": "3009b7",
+      "duration_s": 319.0,
+      "n_points": 64,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3009b7.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3009b8",
+      "aircraft_id": "AC_3009b8",
+      "icao24": "3009b8",
+      "duration_s": 410.0,
+      "n_points": 83,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3009b8.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_346199",
+      "aircraft_id": "AC_346199",
+      "icao24": "346199",
+      "duration_s": 876.0,
+      "n_points": 176,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_346199.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_398561",
+      "aircraft_id": "AC_398561",
+      "icao24": "398561",
+      "duration_s": 72.0,
+      "n_points": 15,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_398561.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_39bb22",
+      "aircraft_id": "AC_39bb22",
+      "icao24": "39bb22",
+      "duration_s": 484.0,
+      "n_points": 97,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_39bb22.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_39cf05",
+      "aircraft_id": "AC_39cf05",
+      "icao24": "39cf05",
+      "duration_s": 761.0,
+      "n_points": 153,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_39cf05.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c0ca3",
+      "aircraft_id": "AC_3c0ca3",
+      "icao24": "3c0ca3",
+      "duration_s": 69.0,
+      "n_points": 14,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c0ca3.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c48f1",
+      "aircraft_id": "AC_3c48f1",
+      "icao24": "3c48f1",
+      "duration_s": 395.0,
+      "n_points": 80,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c48f1.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c4969",
+      "aircraft_id": "AC_3c4969",
+      "icao24": "3c4969",
+      "duration_s": 1184.0,
+      "n_points": 237,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c4969.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c4a8b",
+      "aircraft_id": "AC_3c4a8b",
+      "icao24": "3c4a8b",
+      "duration_s": 381.0,
+      "n_points": 77,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c4a8b.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c4b49",
+      "aircraft_id": "AC_3c4b49",
+      "icao24": "3c4b49",
+      "duration_s": 1016.0,
+      "n_points": 204,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c4b49.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c4b4c",
+      "aircraft_id": "AC_3c4b4c",
+      "icao24": "3c4b4c",
+      "duration_s": 261.0,
+      "n_points": 53,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c4b4c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c4d4a",
+      "aircraft_id": "AC_3c4d4a",
+      "icao24": "3c4d4a",
+      "duration_s": 1095.0,
+      "n_points": 220,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c4d4a.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c54a4",
+      "aircraft_id": "AC_3c54a4",
+      "icao24": "3c54a4",
+      "duration_s": 213.0,
+      "n_points": 43,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c54a4.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c56f1",
+      "aircraft_id": "AC_3c56f1",
+      "icao24": "3c56f1",
+      "duration_s": 72.0,
+      "n_points": 15,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c56f1.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c5b32",
+      "aircraft_id": "AC_3c5b32",
+      "icao24": "3c5b32",
+      "duration_s": 309.0,
+      "n_points": 62,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c5b32.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6429",
+      "aircraft_id": "AC_3c6429",
+      "icao24": "3c6429",
+      "duration_s": 538.0,
+      "n_points": 108,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6429.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6445",
+      "aircraft_id": "AC_3c6445",
+      "icao24": "3c6445",
+      "duration_s": 924.0,
+      "n_points": 185,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6445.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c644d",
+      "aircraft_id": "AC_3c644d",
+      "icao24": "3c644d",
+      "duration_s": 320.0,
+      "n_points": 65,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c644d.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c64ad",
+      "aircraft_id": "AC_3c64ad",
+      "icao24": "3c64ad",
+      "duration_s": 709.0,
+      "n_points": 142,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c64ad.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c64b1",
+      "aircraft_id": "AC_3c64b1",
+      "icao24": "3c64b1",
+      "duration_s": 695.0,
+      "n_points": 140,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c64b1.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6581",
+      "aircraft_id": "AC_3c6581",
+      "icao24": "3c6581",
+      "duration_s": 691.0,
+      "n_points": 139,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6581.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c65e1",
+      "aircraft_id": "AC_3c65e1",
+      "icao24": "3c65e1",
+      "duration_s": 215.0,
+      "n_points": 44,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c65e1.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6634",
+      "aircraft_id": "AC_3c6634",
+      "icao24": "3c6634",
+      "duration_s": 913.0,
+      "n_points": 183,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6634.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6648",
+      "aircraft_id": "AC_3c6648",
+      "icao24": "3c6648",
+      "duration_s": 369.0,
+      "n_points": 74,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6648.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6662",
+      "aircraft_id": "AC_3c6662",
+      "icao24": "3c6662",
+      "duration_s": 950.0,
+      "n_points": 191,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6662.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c66e7",
+      "aircraft_id": "AC_3c66e7",
+      "icao24": "3c66e7",
+      "duration_s": 609.0,
+      "n_points": 122,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c66e7.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6706",
+      "aircraft_id": "AC_3c6706",
+      "icao24": "3c6706",
+      "duration_s": 271.0,
+      "n_points": 55,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c6706.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6707",
+      "aircraft_id": "AC_3c6707",
+      "icao24": "3c6707",
+      "duration_s": 244.0,
+      "n_points": 49,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c6707.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6713",
+      "aircraft_id": "AC_3c6713",
+      "icao24": "3c6713",
+      "duration_s": 282.0,
+      "n_points": 57,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c6713.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6747",
+      "aircraft_id": "AC_3c6747",
+      "icao24": "3c6747",
+      "duration_s": 550.0,
+      "n_points": 111,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6747.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c6749",
+      "aircraft_id": "AC_3c6749",
+      "icao24": "3c6749",
+      "duration_s": 543.0,
+      "n_points": 109,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c6749.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c70b5",
+      "aircraft_id": "AC_3c70b5",
+      "icao24": "3c70b5",
+      "duration_s": 543.0,
+      "n_points": 109,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c70b5.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c7425",
+      "aircraft_id": "AC_3c7425",
+      "icao24": "3c7425",
+      "duration_s": 331.0,
+      "n_points": 67,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c7425.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c7428",
+      "aircraft_id": "AC_3c7428",
+      "icao24": "3c7428",
+      "duration_s": 1185.0,
+      "n_points": 238,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c7428.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c7861",
+      "aircraft_id": "AC_3c7861",
+      "icao24": "3c7861",
+      "duration_s": 164.0,
+      "n_points": 33,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_3c7861.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c7879",
+      "aircraft_id": "AC_3c7879",
+      "icao24": "3c7879",
+      "duration_s": 419.0,
+      "n_points": 84,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c7879.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3c7989",
+      "aircraft_id": "AC_3c7989",
+      "icao24": "3c7989",
+      "duration_s": 1029.0,
+      "n_points": 206,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3c7989.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3e198a",
+      "aircraft_id": "AC_3e198a",
+      "icao24": "3e198a",
+      "duration_s": 621.0,
+      "n_points": 125,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3e198a.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_3e2766",
+      "aircraft_id": "AC_3e2766",
+      "icao24": "3e2766",
+      "duration_s": 1184.0,
+      "n_points": 237,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_3e2766.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4008b5",
+      "aircraft_id": "AC_4008b5",
+      "icao24": "4008b5",
+      "duration_s": 343.0,
+      "n_points": 69,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_4008b5.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_406ecd",
+      "aircraft_id": "AC_406ecd",
+      "icao24": "406ecd",
+      "duration_s": 404.0,
+      "n_points": 81,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_406ecd.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_406f74",
+      "aircraft_id": "AC_406f74",
+      "icao24": "406f74",
+      "duration_s": 505.0,
+      "n_points": 102,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_406f74.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_440020",
+      "aircraft_id": "AC_440020",
+      "icao24": "440020",
+      "duration_s": 194.0,
+      "n_points": 39,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_440020.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_440172",
+      "aircraft_id": "AC_440172",
+      "icao24": "440172",
+      "duration_s": 864.0,
+      "n_points": 173,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_440172.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_440237",
+      "aircraft_id": "AC_440237",
+      "icao24": "440237",
+      "duration_s": 708.0,
+      "n_points": 142,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_440237.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_449683",
+      "aircraft_id": "AC_449683",
+      "icao24": "449683",
+      "duration_s": 504.0,
+      "n_points": 101,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_449683.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_44cdc6",
+      "aircraft_id": "AC_44cdc6",
+      "icao24": "44cdc6",
+      "duration_s": 450.0,
+      "n_points": 91,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_44cdc6.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_44d1c2",
+      "aircraft_id": "AC_44d1c2",
+      "icao24": "44d1c2",
+      "duration_s": 460.0,
+      "n_points": 93,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_44d1c2.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_471dbd",
+      "aircraft_id": "AC_471dbd",
+      "icao24": "471dbd",
+      "duration_s": 1153.0,
+      "n_points": 231,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_471dbd.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_471dbe",
+      "aircraft_id": "AC_471dbe",
+      "icao24": "471dbe",
+      "duration_s": 378.0,
+      "n_points": 76,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_471dbe.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_471f3e",
+      "aircraft_id": "AC_471f3e",
+      "icao24": "471f3e",
+      "duration_s": 531.0,
+      "n_points": 107,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_471f3e.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_471f5d",
+      "aircraft_id": "AC_471f5d",
+      "icao24": "471f5d",
+      "duration_s": 271.0,
+      "n_points": 55,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_471f5d.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_471fae",
+      "aircraft_id": "AC_471fae",
+      "icao24": "471fae",
+      "duration_s": 564.0,
+      "n_points": 113,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_471fae.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_48436c",
+      "aircraft_id": "AC_48436c",
+      "icao24": "48436c",
+      "duration_s": 664.0,
+      "n_points": 133,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_48436c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_48548c",
+      "aircraft_id": "AC_48548c",
+      "icao24": "48548c",
+      "duration_s": 72.0,
+      "n_points": 15,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_48548c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_485a33",
+      "aircraft_id": "AC_485a33",
+      "icao24": "485a33",
+      "duration_s": 734.0,
+      "n_points": 147,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_485a33.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_485a86",
+      "aircraft_id": "AC_485a86",
+      "icao24": "485a86",
+      "duration_s": 271.0,
+      "n_points": 55,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_485a86.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_485b45",
+      "aircraft_id": "AC_485b45",
+      "icao24": "485b45",
+      "duration_s": 531.0,
+      "n_points": 107,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_485b45.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_486495",
+      "aircraft_id": "AC_486495",
+      "icao24": "486495",
+      "duration_s": 1184.0,
+      "n_points": 237,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_486495.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4868ba",
+      "aircraft_id": "AC_4868ba",
+      "icao24": "4868ba",
+      "duration_s": 744.0,
+      "n_points": 149,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4868ba.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_495150",
+      "aircraft_id": "AC_495150",
+      "icao24": "495150",
+      "duration_s": 538.0,
+      "n_points": 108,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_495150.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_495155",
+      "aircraft_id": "AC_495155",
+      "icao24": "495155",
+      "duration_s": 454.0,
+      "n_points": 91,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_495155.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_49d287",
+      "aircraft_id": "AC_49d287",
+      "icao24": "49d287",
+      "duration_s": 538.0,
+      "n_points": 108,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_49d287.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4b8e47",
+      "aircraft_id": "AC_4b8e47",
+      "icao24": "4b8e47",
+      "duration_s": 571.0,
+      "n_points": 115,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4b8e47.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4b9856",
+      "aircraft_id": "AC_4b9856",
+      "icao24": "4b9856",
+      "duration_s": 245.0,
+      "n_points": 50,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_4b9856.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4bb196",
+      "aircraft_id": "AC_4bb196",
+      "icao24": "4bb196",
+      "duration_s": 369.0,
+      "n_points": 74,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4bb196.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4bcd81",
+      "aircraft_id": "AC_4bcd81",
+      "icao24": "4bcd81",
+      "duration_s": 589.0,
+      "n_points": 118,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4bcd81.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4bcde2",
+      "aircraft_id": "AC_4bcde2",
+      "icao24": "4bcde2",
+      "duration_s": 1055.0,
+      "n_points": 212,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4bcde2.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4bcde4",
+      "aircraft_id": "AC_4bcde4",
+      "icao24": "4bcde4",
+      "duration_s": 646.0,
+      "n_points": 130,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4bcde4.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4bce0f",
+      "aircraft_id": "AC_4bce0f",
+      "icao24": "4bce0f",
+      "duration_s": 1184.0,
+      "n_points": 237,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4bce0f.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4bce14",
+      "aircraft_id": "AC_4bce14",
+      "icao24": "4bce14",
+      "duration_s": 389.0,
+      "n_points": 78,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4bce14.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4ca625",
+      "aircraft_id": "AC_4ca625",
+      "icao24": "4ca625",
+      "duration_s": 885.0,
+      "n_points": 178,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4ca625.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4ca97b",
+      "aircraft_id": "AC_4ca97b",
+      "icao24": "4ca97b",
+      "duration_s": 297.0,
+      "n_points": 60,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_4ca97b.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4cad93",
+      "aircraft_id": "AC_4cad93",
+      "icao24": "4cad93",
+      "duration_s": 62.0,
+      "n_points": 13,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_4cad93.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4caddb",
+      "aircraft_id": "AC_4caddb",
+      "icao24": "4caddb",
+      "duration_s": 493.0,
+      "n_points": 99,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4caddb.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4cae96",
+      "aircraft_id": "AC_4cae96",
+      "icao24": "4cae96",
+      "duration_s": 885.0,
+      "n_points": 178,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4cae96.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d00c6",
+      "aircraft_id": "AC_4d00c6",
+      "icao24": "4d00c6",
+      "duration_s": 1185.0,
+      "n_points": 238,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d00c6.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d00d5",
+      "aircraft_id": "AC_4d00d5",
+      "icao24": "4d00d5",
+      "duration_s": 271.0,
+      "n_points": 55,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_4d00d5.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d0111",
+      "aircraft_id": "AC_4d0111",
+      "icao24": "4d0111",
+      "duration_s": 90.0,
+      "n_points": 19,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_4d0111.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d012d",
+      "aircraft_id": "AC_4d012d",
+      "icao24": "4d012d",
+      "duration_s": 455.0,
+      "n_points": 92,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d012d.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d2153",
+      "aircraft_id": "AC_4d2153",
+      "icao24": "4d2153",
+      "duration_s": 620.0,
+      "n_points": 125,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d2153.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d229d",
+      "aircraft_id": "AC_4d229d",
+      "icao24": "4d229d",
+      "duration_s": 1135.0,
+      "n_points": 228,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d229d.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d22ae",
+      "aircraft_id": "AC_4d22ae",
+      "icao24": "4d22ae",
+      "duration_s": 404.0,
+      "n_points": 81,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d22ae.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d245c",
+      "aircraft_id": "AC_4d245c",
+      "icao24": "4d245c",
+      "duration_s": 853.0,
+      "n_points": 171,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d245c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_4d24c2",
+      "aircraft_id": "AC_4d24c2",
+      "icao24": "4d24c2",
+      "duration_s": 939.0,
+      "n_points": 188,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_4d24c2.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_501c16",
+      "aircraft_id": "AC_501c16",
+      "icao24": "501c16",
+      "duration_s": 521.0,
+      "n_points": 105,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_501c16.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_503e61",
+      "aircraft_id": "AC_503e61",
+      "icao24": "503e61",
+      "duration_s": 129.0,
+      "n_points": 26,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_503e61.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_503e9b",
+      "aircraft_id": "AC_503e9b",
+      "icao24": "503e9b",
+      "duration_s": 640.0,
+      "n_points": 129,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_503e9b.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_511171",
+      "aircraft_id": "AC_511171",
+      "icao24": "511171",
+      "duration_s": 1005.0,
+      "n_points": 202,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_511171.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_51119a",
+      "aircraft_id": "AC_51119a",
+      "icao24": "51119a",
+      "duration_s": 130.0,
+      "n_points": 27,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_51119a.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_70c0fe",
+      "aircraft_id": "AC_70c0fe",
+      "icao24": "70c0fe",
+      "duration_s": 110.0,
+      "n_points": 23,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_70c0fe.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_71010f",
+      "aircraft_id": "AC_71010f",
+      "icao24": "71010f",
+      "duration_s": 505.0,
+      "n_points": 102,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_71010f.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_76cda2",
+      "aircraft_id": "AC_76cda2",
+      "icao24": "76cda2",
+      "duration_s": 613.0,
+      "n_points": 123,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_76cda2.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_76cdc3",
+      "aircraft_id": "AC_76cdc3",
+      "icao24": "76cdc3",
+      "duration_s": 709.0,
+      "n_points": 142,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_76cdc3.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_76cef6",
+      "aircraft_id": "AC_76cef6",
+      "icao24": "76cef6",
+      "duration_s": 911.0,
+      "n_points": 183,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_76cef6.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_780a5c",
+      "aircraft_id": "AC_780a5c",
+      "icao24": "780a5c",
+      "duration_s": 261.0,
+      "n_points": 53,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_780a5c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_781b5c",
+      "aircraft_id": "AC_781b5c",
+      "icao24": "781b5c",
+      "duration_s": 392.0,
+      "n_points": 79,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_781b5c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_789215",
+      "aircraft_id": "AC_789215",
+      "icao24": "789215",
+      "duration_s": 314.0,
+      "n_points": 63,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_789215.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_8852e3",
+      "aircraft_id": "AC_8852e3",
+      "icao24": "8852e3",
+      "duration_s": 700.0,
+      "n_points": 141,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_8852e3.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_89408d",
+      "aircraft_id": "AC_89408d",
+      "icao24": "89408d",
+      "duration_s": 261.0,
+      "n_points": 53,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_89408d.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_894097",
+      "aircraft_id": "AC_894097",
+      "icao24": "894097",
+      "duration_s": 1094.0,
+      "n_points": 219,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_894097.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_89409e",
+      "aircraft_id": "AC_89409e",
+      "icao24": "89409e",
+      "duration_s": 129.0,
+      "n_points": 26,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_89409e.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_8940c3",
+      "aircraft_id": "AC_8940c3",
+      "icao24": "8940c3",
+      "duration_s": 974.0,
+      "n_points": 195,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_8940c3.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_8963e3",
+      "aircraft_id": "AC_8963e3",
+      "icao24": "8963e3",
+      "duration_s": 314.0,
+      "n_points": 63,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_8963e3.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_8963f2",
+      "aircraft_id": "AC_8963f2",
+      "icao24": "8963f2",
+      "duration_s": 821.0,
+      "n_points": 165,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_8963f2.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_896406",
+      "aircraft_id": "AC_896406",
+      "icao24": "896406",
+      "duration_s": 695.0,
+      "n_points": 140,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_896406.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_89664c",
+      "aircraft_id": "AC_89664c",
+      "icao24": "89664c",
+      "duration_s": 734.0,
+      "n_points": 147,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_89664c.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_8966bd",
+      "aircraft_id": "AC_8966bd",
+      "icao24": "8966bd",
+      "duration_s": 865.0,
+      "n_points": 174,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_8966bd.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_89900e",
+      "aircraft_id": "AC_89900e",
+      "icao24": "89900e",
+      "duration_s": 646.0,
+      "n_points": 130,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_89900e.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_899019",
+      "aircraft_id": "AC_899019",
+      "icao24": "899019",
+      "duration_s": 505.0,
+      "n_points": 102,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_899019.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_a8f3c5",
+      "aircraft_id": "AC_a8f3c5",
+      "icao24": "a8f3c5",
+      "duration_s": 370.0,
+      "n_points": 75,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_a8f3c5.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_aab202",
+      "aircraft_id": "AC_aab202",
+      "icao24": "aab202",
+      "duration_s": 547.0,
+      "n_points": 110,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_aab202.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_abfdd1",
+      "aircraft_id": "AC_abfdd1",
+      "icao24": "abfdd1",
+      "duration_s": 80.0,
+      "n_points": 17,
+      "usable_for_300s_eval": false,
+      "file": "opensky_live_abfdd1.parquet"
+    },
+    {
+      "scenario_id": "opensky_live_c01759",
+      "aircraft_id": "AC_c01759",
+      "icao24": "c01759",
+      "duration_s": 410.0,
+      "n_points": 83,
+      "usable_for_300s_eval": true,
+      "file": "opensky_live_c01759.parquet"
+    }
+  ]
+}

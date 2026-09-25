@@ -57,7 +57,6 @@ atc-conflict-advisory/
 │   │   └── run_opensky_eval.py  # Position RMSE evaluation on empirical OpenSky data
 │   └── models/
 │       ├── baseline.py          # 3-step finite difference & smoothed CV predictors
-│       ├── lstm_model.py        # PyTorch 2-layer residual LSTM architecture
 │       ├── lstm_predictor.py    # Zero-initialized residual trajectory inference wrapper
 │       └── train_lstm.py        # PyTorch training loop with validation early stopping
 ├── tests/                       # Comprehensive pytest suite (42 unit & integration tests)
@@ -190,7 +189,7 @@ All backend endpoints are served under `/api/`:
 
 ## 7. Key Research Findings & Limitations
 
-For complete benchmark tables, bootstrap confidence intervals, and failure analysis, see [`REPORT.md`](file:///Users/miteshsingh/Documents/projects/Air-Traffic%20Conflict-Risk%20Advisory%20Agent/REPORT.md).
+For complete benchmark tables, bootstrap confidence intervals, and failure analysis, see [`REPORT.md`](REPORT.md).
 
 - **Synthetic Performance**: On `hard_large` TEST, the residual LSTM reduced false alarms from 56 down to 6 (+99.6% precision, 0.9230 F1) and reduced 300 s position RMSE from 2.91 NM / 421.6 ft down to 2.68 NM / 148.9 ft.
 - **Empirical ADS-B Generalization Failure**: When tested on real OpenSky flights, the LSTM's vertical error **more than doubled** relative to `cv_smoothed` (867.98 ft vs 396.31 ft at 60 s; 4,334.14 ft vs 2,778.97 ft at 300 s), while lateral improvements shrank to +1.2% to +5.3%.
