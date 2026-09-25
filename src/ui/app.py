@@ -45,8 +45,8 @@ def create_app() -> FastAPI:
     app.add_middleware(
         CORSMiddleware,
         allow_origins=["*"],
-        allow_credentials=True,
-        allow_methods=["*"],
+        allow_credentials=False,  # wildccard origin + credentials=True is invalid per Fetch spec
+        allow_methods=["GET"],    # research console is read-only
         allow_headers=["*"],
     )
 
@@ -92,6 +92,8 @@ def create_app() -> FastAPI:
             )
         except FileNotFoundError:
             raise HTTPException(status_code=404, detail=f"Scenario '{scenario_id}' not found")
+        except ValueError as e:
+            raise HTTPException(status_code=400, detail=str(e))
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
 
@@ -104,6 +106,12 @@ def create_app() -> FastAPI:
         """Return verified benchmark evaluation metrics for model and split."""
         try:
             return get_benchmark_metrics(dataset=dataset, split=split, model_name=model)
+        except ValueError as e:
+            raise HTTPException(status_code=400, detail=str(e))
+        except FileNotFoundError as e:
+            raise HTTPException(status_code=404, detail=str(e))
+        except HTTPException:
+            raise
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
 

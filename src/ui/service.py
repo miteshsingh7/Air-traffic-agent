@@ -8,9 +8,11 @@ and conflict geometry / evaluation pipelines.
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 import time
 from typing import Any, Mapping
+import warnings
 
 import numpy as np
 import pandas as pd
@@ -71,6 +73,7 @@ def get_system_info() -> dict[str, Any]:
     """Return system runtime configuration, seeds, device, and separation minima."""
     device = get_torch_device()
     seeds = {"easy": 42, "hard_v1": 1042, "hard_large": 2042}
+    config_warning: str | None = None
     if CONFIG_PATH.exists():
         try:
             with open(CONFIG_PATH, "r", encoding="utf-8") as f:
@@ -81,8 +84,11 @@ def get_system_info() -> dict[str, Any]:
                     seeds["hard_v1"] = raw_cfg["hard_dataset"]["seed"]
                 if "hard_large_dataset" in raw_cfg and "seed" in raw_cfg["hard_large_dataset"]:
                     seeds["hard_large"] = raw_cfg["hard_large_dataset"]["seed"]
-        except Exception:
-            pass
+        except (yaml.YAMLError, KeyError, TypeError, ValueError) as exc:
+            msg = f"Could not fully parse config at {CONFIG_PATH}: {exc}"
+            warnings.warn(msg, stacklevel=2)
+            logging.getLogger(__name__).warning(msg)
+            config_warning = msg
 
     ckpt_exists = CHECKPOINT_PATH.exists()
     ckpt_size = CHECKPOINT_PATH.stat().st_size if ckpt_exists else 0
@@ -107,6 +113,7 @@ def get_system_info() -> dict[str, Any]:
         },
         "console_version": "v2.4-alpha",
         "advisory_disclaimer": "RESEARCH SIMULATION — ADVISORY ONLY — NOT FOR OPERATIONAL USE",
+        "config_warning": config_warning,
     }
 
 
@@ -196,6 +203,11 @@ def list_scenarios(dataset: str = "hard_v1", split: str = "test") -> list[dict[s
 
     results: list[dict[str, Any]] = []
     for sid in scenario_ids:
+        if not (data_dir / f"{sid}.parquet").exists():
+            logging.getLogger(__name__).debug(
+                "Skipping scenario '%s': parquet file not found in %s", sid, data_dir
+            )
+            continue
         scen_meta = meta_dict.get(sid, {})
         injected = bool(scen_meta.get("injected_conflict", False))
         near_miss = bool(scen_meta.get("near_miss", False))
@@ -236,7 +248,29 @@ def load_scenario_detail(
     lookahead_s: float = 180.0,
 ) -> dict[str, Any]:
     """Load scenario trajectory tracks, origin slice, model prediction, and pair telemetry."""
-    data_dir, _, meta_file = _resolve_dataset_paths(dataset)
+    data_dir, splits_file, meta_file = _resolve_dataset_paths(dataset)
+
+    # Validate that the requested scenario_id belongs to the requested split.
+    # Only applies to datasets that have an explicit splits JSON file.
+    if splits_file and splits_file.exists():
+        with open(splits_file, "r", encoding="utf-8") as f:
+            splits_data = json.load(f)
+        if split not in splits_data:
+            raise ValueError(
+                f"Unknown split '{split}' for dataset '{dataset}'. Valid splits: {list(splits_data.keys())}"
+            )
+        split_ids: list[str] = splits_data.get(split, [])
+        if scenario_id not in split_ids:
+            raise ValueError(
+                f"Scenario '{scenario_id}' is not a member of split '{split}' "
+                f"in dataset '{dataset}'."
+            )
+    elif dataset in ("opensky", "opensky_live_sample"):
+        if split not in ("sample",):
+            raise ValueError(
+                f"Unknown split '{split}' for dataset '{dataset}'. Valid splits: ['sample']"
+            )
+
     file_path = data_dir / f"{scenario_id}.parquet"
     if not file_path.exists():
         raise FileNotFoundError(f"Scenario file not found: {file_path}")
@@ -549,6 +583,9 @@ def get_benchmark_metrics(
     else:
         raise ValueError(f"Unknown dataset '{dataset}'")
 
+    if split not in ("test", "val", "train", "sample"):
+        raise ValueError(f"Unknown split '{split}' for dataset '{dataset}'")
+
     # Map model name
     if model_name in ("lstm_v1", "lstm"):
         model_arg = "lstm"
@@ -560,8 +597,7 @@ def get_benchmark_metrics(
         model_arg = "cv_3step"
         checkpoint = None
     else:
-        model_arg = model_name
-        checkpoint = None
+        raise ValueError(f"Unknown model '{model_name}'")
 
     t0 = time.perf_counter()
     metrics_list, conf = run_test_evaluation(

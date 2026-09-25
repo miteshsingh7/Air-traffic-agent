@@ -41,11 +41,18 @@ data/cache/
 data/**/*.parquet
 
 # Whitelist curated sample scenarios for out-of-the-box UI & test execution on fresh clone
+!data/synthetic/scenario_0000.parquet
+!data/synthetic/scenario_0002.parquet
 !data/synthetic/scenario_0006.parquet
 !data/synthetic/scenario_0014.parquet
+!data/synthetic_hard/scenario_0000.parquet
+!data/synthetic_hard/scenario_0003.parquet
 !data/synthetic_hard/scenario_0012.parquet
+!data/synthetic_hard/scenario_0014.parquet
 !data/synthetic_hard/scenario_0018.parquet
 !data/synthetic_hard/scenario_0034.parquet
+!data/synthetic_hard_large/scenario_0000.parquet
+!data/synthetic_hard_large/scenario_0001.parquet
 !data/synthetic_hard_large/scenario_0003.parquet
 !data/synthetic_hard_large/scenario_0015.parquet
 !data/opensky_live_sample/opensky_live_040262.parquet
