@@ -1,0 +1,57 @@
+# Configuration for Air-Traffic Conflict-Risk Advisory Agent
+# Research simulation only - not for operational use.
+
+separation_minima:
+  lateral_nm: 5.0
+  vertical_ft: 1000.0
+
+time:
+  resample_rate_s: 5
+  history_s: 60
+  horizon_s: 300
+  scenario_duration_s: 1200
+  total_duration_s: 1200
+
+airspace:
+  x_min_nm: 0.0
+  x_max_nm: 200.0
+  y_min_nm: 0.0
+  y_max_nm: 200.0
+  alt_min_ft: 10000.0
+  alt_max_ft: 40000.0
+
+simulation:
+  default_num_scenarios: 500
+  conflict_probability: 0.30
+  min_aircraft: 2
+  max_aircraft: 8
+  min_speed_kt: 200.0
+  max_speed_kt: 500.0
+  output_dir: "data/synthetic"
+
+splits:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  seed: 42
+  output_file: "data/splits.json"
+
+hard_dataset:
+  output_dir: "data/synthetic_hard"
+  splits_file: "data/splits_hard.json"
+  seed: 1042
+  maneuver_conflict_prob: 0.50
+  near_miss_scenario_prob: 0.25
+  history_noise_sigma_horizontal_nm: 0.02
+  history_noise_sigma_vertical_ft: 50.0
+
+hard_large_dataset:
+  output_dir: "data/synthetic_hard_large"
+  splits_file: "data/splits_hard_large.json"
+  seed: 2042
+  default_num_scenarios: 3000
+  maneuver_conflict_prob: 0.50
+  near_miss_scenario_prob: 0.25
+  history_noise_sigma_horizontal_nm: 0.02
+  history_noise_sigma_vertical_ft: 50.0
+

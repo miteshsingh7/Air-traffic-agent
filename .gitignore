@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Environment & OS
+.DS_Store
+*.swp
+*.swo
+
+# Large data files — exclude raw parquet scenarios (too large for GitHub)
+# Splits JSON and metadata JSON are committed (small, required for repo usability)
+data/synthetic/
+data/synthetic_hard/
+data/synthetic_hard_large/
+data/opensky_live_sample/
+data/cache/
+
+# Scratch files
+scratch/

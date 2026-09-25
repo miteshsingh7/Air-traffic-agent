@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AeroMetrics Conflict Research Console</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+      main > :first-child { margin-top: 0 !important; }
+      main > :last-child { margin-bottom: 0 !important; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    .scrollbar-hidden { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#031427",
+            "surface-dim": "#031427",
+            "surface-bright": "#2a3a4f",
+            "surface-container-lowest": "#000f21",
+            "surface-container-low": "#0b1c30",
+            "surface-container": "#102034",
+            "surface-container-high": "#1b2b3f",
+            "surface-container-highest": "#26364a",
+            "surface-variant": "#26364a",
+            "on-surface": "#d3e4fe",
+            "on-surface-variant": "#bdc8d1",
+            "inverse-surface": "#d3e4fe",
+            "inverse-on-surface": "#213145",
+            "outline": "#87929a",
+            "outline-variant": "#3e484f",
+            "primary": "#8ed5ff",
+            "primary-container": "#38bdf8",
+            "on-primary": "#00354a",
+            "on-primary-container": "#004965",
+            "primary-fixed": "#c4e7ff",
+            "primary-fixed-dim": "#7bd0ff",
+            "secondary": "#bdc2ff",
+            "secondary-container": "#2f3aa3",
+            "secondary-fixed": "#e0e0ff",
+            "secondary-fixed-dim": "#bdc2ff",
+            "tertiary": "#ffc174",
+            "tertiary-container": "#f59e0b",
+            "tertiary-fixed": "#ffddb8",
+            "tertiary-fixed-dim": "#ffb95f",
+            "error": "#ffb4ab",
+            "error-container": "#93000a",
+            "background": "#031427",
+            "on-background": "#d3e4fe"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "space-xs": "0.125rem",
+            "space-sm": "0.25rem",
+            "space-md": "0.5rem",
+            "space-lg": "0.75rem",
+            "space-xl": "1rem",
+            "margin": "1rem",
+            "margin-panel": "0.75rem",
+            "gutter": "0.75rem",
+            "gutter-compact": "0.375rem",
+            "26": "6.5rem"
+          },
+          fontFamily: {
+            "headline-xl": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-md": ["Inter"],
+            "headline-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-lg": ["JetBrains Mono"],
+            "body-md": ["JetBrains Mono"],
+            "body-sm": ["JetBrains Mono"],
+            "telemetry-num": ["JetBrains Mono"]
+          },
+          fontSize: {
+            "headline-xl": ["2rem", { lineHeight: "2.5rem", letterSpacing: "-0.02em", fontWeight: "600" }],
+            "headline-lg": ["1.5rem", { lineHeight: "2rem", letterSpacing: "-0.015em", fontWeight: "600" }],
+            "headline-md": ["1.125rem", { lineHeight: "1.5rem", letterSpacing: "-0.01em", fontWeight: "500" }],
+            "headline-sm": ["0.875rem", { lineHeight: "1.25rem", letterSpacing: "0.02em", fontWeight: "600" }],
+            "label-md": ["0.75rem", { lineHeight: "1rem", letterSpacing: "0.05em", fontWeight: "600" }],
+            "label-sm": ["0.6875rem", { lineHeight: "0.875rem", letterSpacing: "0.06em", fontWeight: "500" }],
+            "body-lg": ["0.9375rem", { lineHeight: "1.5rem", fontWeight: "400" }],
+            "body-md": ["0.8125rem", { lineHeight: "1.25rem", fontWeight: "400" }],
+            "body-sm": ["0.75rem", { lineHeight: "1.125rem", fontWeight: "400" }],
+            "telemetry-num": ["1.125rem", { lineHeight: "1.25rem", letterSpacing: "0.02em", fontWeight: "500" }]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+
+  <!-- Fixed Top Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/95 backdrop-blur-md">
+    <!-- Amber Safety & Research Disclaimer Banner -->
+    <div class="h-6 w-full bg-surface-container-low px-margin flex items-center justify-between border-b border-surface-container">
+      <div class="flex items-center gap-space-sm">
+        <span class="material-symbols-outlined text-tertiary-container text-[14px]">warning</span>
+        <span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary font-semibold" id="disclaimerBanner">
+          RESEARCH SIMULATION — ADVISORY ONLY — NOT FOR OPERATIONAL USE
+        </span>
+      </div>
+      <div class="flex items-center gap-space-md">
+        <span class="font-body-sm text-body-sm text-on-surface-variant" id="headerBuild">CONSOLE BUILD: v2.4-alpha</span>
+        <span class="font-label-sm text-label-sm px-space-xs py-0 bg-surface-container text-outline rounded">SANDBOX-ISOLATED</span>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="h-20 w-full px-margin flex items-center justify-between gap-margin bg-surface-container-lowest border-b border-surface-container">
+      <div class="flex flex-col justify-center min-w-0">
+        <div class="flex items-center gap-space-sm">
+          <span class="font-headline-sm text-headline-sm text-primary tracking-tight whitespace-nowrap">AeroMetrics Lab</span>
+          <span class="font-body-sm text-body-sm text-outline-variant">//</span>
+          <span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">Conflict Prediction &amp; Resolution (CP&amp;R) Workbench</span>
+        </div>
+        <div class="flex items-center gap-space-sm mt-space-xs font-body-sm text-body-sm text-on-surface-variant">
+          <span class="text-outline">DATASET-SPEC:</span>
+          <span class="text-primary-fixed-dim" id="headerDatasetSpec">SYNTHETIC-OFFLINE</span>
+          <span class="text-outline-variant">|</span>
+          <span class="text-outline">ENGINE:</span>
+          <span class="text-primary-fixed-dim" id="headerEngineSpec">PYTORCH-EVAL</span>
+        </div>
+      </div>
+
+      <!-- Live Sim Engine Status Ribbon -->
+      <div class="flex items-center gap-margin shrink-0">
+        <div class="flex items-center gap-space-md px-margin py-space-xs bg-surface-container rounded">
+          <div class="flex items-center gap-space-sm">
+            <span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+            <span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SIM ENGINE</span>
+          </div>
+          <div class="h-4 w-px bg-surface-container-high"></div>
+          <div class="flex items-center gap-space-xs font-telemetry-num text-telemetry-num text-primary">
+            <span class="text-on-surface-variant text-label-sm uppercase font-label-sm">SIM-T:</span>
+            <span id="headerSimTime">02:00</span>
+            <span class="text-body-sm text-outline font-body-sm">s</span>
+          </div>
+          <div class="h-4 w-px bg-surface-container-high"></div>
+          <span class="font-body-sm text-body-sm text-tertiary-fixed-dim bg-surface-container-high px-space-sm py-space-xs rounded" id="headerLookaheadBadge">+180s LOOKAHEAD</span>
+        </div>
+
+        <div class="hidden xl:flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant">
+          <div class="flex items-center gap-space-xs">
+            <span class="text-outline">DEVICE:</span>
+            <span class="text-primary font-semibold" id="headerDeviceChip">ACTIVE (MPS)</span>
+          </div>
+          <span class="text-outline-variant">•</span>
+          <div class="flex items-center gap-space-xs">
+            <span class="text-outline">PRECISION:</span>
+            <span class="text-on-surface">FP32</span>
+          </div>
+          <span class="text-outline-variant">•</span>
+          <div class="flex items-center gap-space-xs">
+            <span class="text-outline">LOGS:</span>
+            <span class="text-tertiary">REPLAY MODE</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-space-sm">
+          <div class="flex items-center bg-surface-container rounded p-space-xs">
+            <button class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" id="exportJsonBtn" type="button">JSON</button>
+            <button class="px-space-sm py-space-xs font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high rounded transition-colors" id="exportCsvBtn" type="button">CSV</button>
+          </div>
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0">
+            <span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Left Sidebar Navigation -->
+  <aside class="fixed left-0 top-[6.5rem] h-[calc(100vh-6.5rem)] w-64 bg-surface-container-lowest z-40 flex flex-col justify-between p-margin border-r border-surface-container">
+    <div class="flex flex-col gap-space-lg">
+      <div class="flex items-center justify-between px-space-sm">
+        <span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Research Modules</span>
+        <span class="font-body-sm text-body-sm text-primary-container font-mono">v2.4</span>
+      </div>
+      <nav class="flex flex-col gap-space-xs" id="researchNav">
+        <a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded transition-colors bg-primary-container text-on-primary-container font-headline-sm text-headline-sm cursor-pointer" data-module="conflict-prediction">
+          <span class="material-symbols-outlined text-[18px]">radar</span>
+          <span>Conflict Prediction</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm rounded font-headline-sm text-headline-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-module="resolution-engine">
+          <span class="material-symbols-outlined text-[18px]">route</span>
+          <span>Resolution Engine</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm rounded font-headline-sm text-headline-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-module="trajectory-inspector">
+          <span class="material-symbols-outlined text-[18px]">analytics</span>
+          <span>Trajectory Inspector</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm rounded font-headline-sm text-headline-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-module="los-ledger">
+          <span class="material-symbols-outlined text-[18px]">report_problem</span>
+          <span>LoS Advisory Ledger</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm rounded font-headline-sm text-headline-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-module="model-benchmarks">
+          <span class="material-symbols-outlined text-[18px]">neurology</span>
+          <span>Model Benchmarks</span>
+        </a>
+        <a class="flex items-center gap-space-md px-space-md py-space-sm rounded font-headline-sm text-headline-sm text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors cursor-pointer" data-module="scenario-replay">
+          <span class="material-symbols-outlined text-[18px]">history_toggle_off</span>
+          <span>Scenario Replay</span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Separation Standards Reference Box -->
+    <div class="flex flex-col gap-space-sm bg-surface-container p-space-md rounded">
+      <div class="flex items-center justify-between font-label-sm text-label-sm text-outline uppercase">
+        <span>Separation Minima</span>
+        <span class="text-primary font-body-sm text-body-sm" id="sidebarSepMinima">5.0 NM / 1000 FT</span>
+      </div>
+      <div class="flex items-center justify-between font-label-sm text-label-sm text-outline uppercase">
+        <span>Predictive Step</span>
+        <span class="text-on-surface font-body-sm text-body-sm" id="sidebarPredStep">5.0s (MPS)</span>
+      </div>
+      <div class="flex items-center justify-between font-label-sm text-label-sm text-outline uppercase">
+        <span>Seed Value</span>
+        <span class="text-on-surface font-body-sm text-body-sm" id="sidebarSeed">#1042</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Viewport -->
+  <div class="pl-64">
+    <main class="relative pt-[6.5rem] bg-surface min-h-screen w-full px-margin">
+      <div class="flex flex-col w-full gap-space-lg pb-10">
+
+        <!-- Top Scenario Status Ribbon (Alert / Simulation Framing) -->
+        <div class="w-full bg-surface-container-low rounded-lg p-space-md flex flex-wrap items-center justify-between gap-space-md shadow-md border border-surface-container">
+          <div class="flex items-center gap-space-md min-w-0">
+            <div class="flex items-center gap-space-sm px-space-md py-space-xs bg-tertiary-container/15 rounded text-tertiary">
+              <span class="material-symbols-outlined text-[16px] text-tertiary">science</span>
+              <span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold" id="ribbonModelTag">MODEL BENCHMARK: cv_smoothed</span>
+            </div>
+            <div class="h-4 w-px bg-surface-variant"></div>
+            <div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface-variant truncate">
+              <span class="text-outline">SCENARIO:</span>
+              <span class="text-primary font-semibold font-telemetry-num" id="ribbonScenarioId">scenario_0012</span>
+              <span class="text-outline-variant">•</span>
+              <span class="text-outline">AIRSPACE:</span>
+              <span class="text-on-surface font-telemetry-num" id="ribbonAirspaceDesc">SECTOR SYNTHETIC-ENROUTE (200 NM x 200 NM)</span>
+            </div>
+          </div>
+          <div class="flex items-center gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+            <span class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded bg-surface-container font-label-sm text-label-sm" id="ribbonConflictBadge">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              <span>SEPARATION CLEAR</span>
+            </span>
+            <div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded">
+              <span class="material-symbols-outlined text-[15px] text-primary">memory</span>
+              <span class="font-telemetry-num text-label-sm text-primary" id="ribbonEvalLatency">EVAL LATENCY: 0.5ms</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Primary Workspace Grid: Sidebar & Visualizer Panels -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter w-full">
+
+          <!-- Left Column: Scenario Configuration, Playback Scrubbing & Aircraft Pair Inspector -->
+          <div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-space-md">
+
+            <!-- Scenario Configuration Box -->
+            <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-md shadow-sm border border-surface-container">
+              <div class="flex items-center justify-between pb-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+                  <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">SCENARIO CONFIG</span>
+                </div>
+                <span class="font-label-sm text-label-sm text-outline px-space-xs py-0.5 rounded bg-surface-container font-mono" id="configEvalTag">v2.1-EVAL</span>
+              </div>
+
+              <!-- Dataset and Split Selectors -->
+              <div class="grid grid-cols-2 gap-space-sm">
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-sm text-label-sm uppercase text-outline">DATASET</label>
+                  <div class="relative">
+                    <select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-space-sm py-1.5 rounded appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer border border-surface-container" id="datasetSelector">
+                      <option value="hard_v1" selected>hard_v1 (multi-crossing)</option>
+                      <option value="hard_large">hard_large (10k tracks)</option>
+                      <option value="easy">easy (dense nominal)</option>
+                      <option value="opensky">opensky (live ADS-B sample)</option>
+                    </select>
+                    <span class="material-symbols-outlined absolute right-2 top-2 text-[14px] text-outline pointer-events-none">expand_more</span>
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-space-xs">
+                  <label class="font-label-sm text-label-sm uppercase text-outline">SPLIT</label>
+                  <div class="relative">
+                    <select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-space-sm py-1.5 rounded appearance-none focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer border border-surface-container" id="splitSelector">
+                      <option value="test" selected>test (15%)</option>
+                      <option value="val">val (15%)</option>
+                      <option value="train">train (70%)</option>
+                    </select>
+                    <span class="material-symbols-outlined absolute right-2 top-2 text-[14px] text-outline pointer-events-none">expand_more</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Scenario ID Selector and Pager -->
+              <div class="flex flex-col gap-space-xs">
+                <div class="flex items-center justify-between">
+                  <label class="font-label-sm text-label-sm uppercase text-outline">SCENARIO ID</label>
+                  <span class="font-body-sm text-body-sm text-primary font-mono" id="scenarioPagerIndex">INDEX: 001 / 075</span>
+                </div>
+                <div class="flex items-center gap-space-xs">
+                  <button class="bg-surface-container hover:bg-surface-container-high text-on-surface px-2 py-1.5 rounded flex items-center justify-center transition-colors border border-surface-container" id="prevScenarioBtn" title="Previous Scenario" type="button">
+                    <span class="material-symbols-outlined text-[16px]">chevron_left</span>
+                  </button>
+                  <div class="flex-1 bg-surface-container-lowest px-space-sm py-1.5 rounded flex items-center justify-between min-w-0 border border-surface-container">
+                    <span class="font-telemetry-num text-body-sm text-primary-fixed truncate" id="currentScenarioIdDisplay">scenario_0012</span>
+                    <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded" id="currentScenarioTag">NEAR MISS</span>
+                  </div>
+                  <button class="bg-surface-container hover:bg-surface-container-high text-on-surface px-2 py-1.5 rounded flex items-center justify-center transition-colors border border-surface-container" id="nextScenarioBtn" title="Next Scenario" type="button">
+                    <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Scenario List Drawer Mini Ledger -->
+              <div class="flex flex-col gap-1 max-h-36 overflow-y-auto bg-surface-container-lowest/60 p-space-xs rounded border border-surface-container" id="scenarioListLedger">
+                <!-- Dynamically populated from /api/scenarios -->
+              </div>
+            </div>
+
+            <!-- Playback & Lookahead Timeline Scrubber -->
+            <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-md shadow-sm border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">PLAYBACK &amp; LOOKAHEAD</span>
+                <span class="font-telemetry-num text-body-sm text-primary" id="scrubberTimeDisplay">02:00 / 20:00</span>
+              </div>
+
+              <!-- Custom Scrubber Slider -->
+              <div class="flex flex-col gap-1.5">
+                <div class="relative w-full h-3 bg-surface-container-lowest rounded-full cursor-pointer overflow-hidden flex items-center border border-surface-container" id="timelineBar">
+                  <div class="absolute left-0 h-full bg-primary-container" id="playbackFill" style="width: 10%;"></div>
+                  <div class="absolute left-[10%] h-full w-1 bg-white shadow-sm" id="scrubHead"></div>
+                </div>
+                <div class="flex justify-between font-telemetry-num text-[10px] text-outline">
+                  <span>00:00</span>
+                  <span class="text-tertiary font-semibold" id="timelineCpaWindow">OBSERVATION ORIGIN</span>
+                  <span id="timelineMaxTime">20:00</span>
+                </div>
+              </div>
+
+              <!-- Speed & Playback Action Buttons -->
+              <div class="flex items-center justify-between gap-space-xs">
+                <div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded border border-surface-container">
+                  <button class="w-7 h-7 flex items-center justify-center rounded bg-surface-container text-on-surface hover:text-primary transition-colors" id="stepBackBtn" title="Step Back 30s" type="button">
+                    <span class="material-symbols-outlined text-[16px]">replay_10</span>
+                  </button>
+                  <button class="w-7 h-7 flex items-center justify-center rounded bg-primary text-on-primary font-bold hover:bg-primary-fixed-dim transition-colors" id="simPlayBtn" title="Play/Pause" type="button">
+                    <span class="material-symbols-outlined text-[16px]">play_arrow</span>
+                  </button>
+                  <button class="w-7 h-7 flex items-center justify-center rounded bg-surface-container text-on-surface hover:text-primary transition-colors" id="stepFwdBtn" title="Step Forward 30s" type="button">
+                    <span class="material-symbols-outlined text-[16px]">forward_10</span>
+                  </button>
+                </div>
+                <div class="flex items-center bg-surface-container-lowest p-1 rounded gap-0.5 border border-surface-container" id="speedButtons">
+                  <button class="px-2 py-1 font-telemetry-num text-[11px] rounded bg-primary text-on-primary font-semibold" data-speed="1" type="button">1x</button>
+                  <button class="px-2 py-1 font-telemetry-num text-[11px] rounded hover:bg-surface-container text-on-surface-variant" data-speed="2" type="button">2x</button>
+                  <button class="px-2 py-1 font-telemetry-num text-[11px] rounded hover:bg-surface-container text-on-surface-variant" data-speed="5" type="button">5x</button>
+                </div>
+              </div>
+
+              <!-- Lookahead Horizon Slider -->
+              <div class="flex flex-col gap-1.5 pt-space-xs">
+                <div class="flex items-center justify-between font-label-sm text-label-sm">
+                  <span class="text-outline uppercase">PREDICTIVE HORIZON (t_lookahead)</span>
+                  <span class="font-telemetry-num text-tertiary-fixed font-semibold" id="lookaheadValueText">180s (3.0 NM sep)</span>
+                </div>
+                <input class="w-full h-1.5 bg-surface-container-lowest rounded-lg appearance-none cursor-pointer accent-primary" id="lookaheadSlider" max="300" min="30" step="30" type="range" value="180">
+                <div class="flex justify-between font-telemetry-num text-[10px] text-outline">
+                  <span>30s</span>
+                  <span>120s</span>
+                  <span>180s (STD)</span>
+                  <span>240s</span>
+                  <span>300s</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Active Aircraft Pair Telemetry Inspector -->
+            <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-md shadow-sm border border-surface-container">
+              <div class="flex items-center justify-between pb-space-xs">
+                <div class="flex items-center gap-space-sm">
+                  <span class="material-symbols-outlined text-tertiary text-[18px]">troubleshoot</span>
+                  <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">ACTIVE CONFLICT PAIR</span>
+                </div>
+                <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded font-bold uppercase" id="pairRiskChip">SEPARATION CLEAR</span>
+              </div>
+
+              <!-- Aircraft 1 vs Aircraft 2 Cards -->
+              <div class="grid grid-cols-2 gap-space-sm font-body-sm text-body-sm" id="pairCardsContainer">
+                <!-- AC 1 Card -->
+                <div class="bg-surface-container-lowest p-space-sm rounded flex flex-col gap-1 border border-surface-container">
+                  <div class="flex items-center justify-between">
+                    <span class="font-telemetry-num text-primary font-bold" id="ac1Id">AC_0</span>
+                    <span class="font-label-sm text-[10px] text-outline" id="ac1Type">COMMERCIAL</span>
+                  </div>
+                  <div class="font-telemetry-num text-[11px] text-on-surface-variant flex flex-col">
+                    <span>ALT: <strong class="text-on-surface" id="ac1Alt">FL225</strong></span>
+                    <span>GS: <strong class="text-on-surface" id="ac1Speed">440 kts</strong></span>
+                    <span>HDG: <strong class="text-on-surface" id="ac1Hdg">082°</strong></span>
+                    <span>ROCD: <strong class="text-primary-fixed" id="ac1Rocd">LEVEL (0 fpm)</strong></span>
+                  </div>
+                </div>
+
+                <!-- AC 2 Card -->
+                <div class="bg-surface-container-lowest p-space-sm rounded flex flex-col gap-1 border border-surface-container">
+                  <div class="flex items-center justify-between">
+                    <span class="font-telemetry-num text-tertiary font-bold" id="ac2Id">AC_1</span>
+                    <span class="font-label-sm text-[10px] text-outline" id="ac2Type">COMMERCIAL</span>
+                  </div>
+                  <div class="font-telemetry-num text-[11px] text-on-surface-variant flex flex-col">
+                    <span>ALT: <strong class="text-on-surface" id="ac2Alt">FL230</strong></span>
+                    <span>GS: <strong class="text-on-surface" id="ac2Speed">450 kts</strong></span>
+                    <span>HDG: <strong class="text-on-surface" id="ac2Hdg">224°</strong></span>
+                    <span>ROCD: <strong class="text-tertiary" id="ac2Rocd">LEVEL (0 fpm)</strong></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pairwise Computed Kinematic Vectors -->
+              <div class="flex flex-col gap-space-xs bg-surface-container-lowest/80 p-space-sm rounded font-telemetry-num text-body-sm border border-surface-container">
+                <div class="flex items-center justify-between">
+                  <span class="text-outline text-label-sm font-label-sm uppercase">Closure Rate (V_rel):</span>
+                  <span class="text-on-surface font-semibold" id="pairClosureRate">0.0 kts</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-outline text-label-sm font-label-sm uppercase">Current Separation:</span>
+                  <span class="text-primary font-bold" id="pairCurrentSep">0.0 NM</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-outline text-label-sm font-label-sm uppercase">Predicted CPA Distance:</span>
+                  <span class="text-tertiary font-bold" id="pairCpaDist">0.0 NM</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-outline text-label-sm font-label-sm uppercase">Time to CPA (tau):</span>
+                  <span class="text-tertiary font-bold" id="pairTau">t+0s</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-outline text-label-sm font-label-sm uppercase">Vertical Separation at CPA:</span>
+                  <span class="text-tertiary font-bold" id="pairCpaVert">0 ft</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-outline text-label-sm font-label-sm uppercase">Conflict Probability P(C):</span>
+                  <span class="text-tertiary-fixed font-bold" id="pairPRisk">0.05</span>
+                </div>
+              </div>
+
+              <!-- Research Separation Standards and Weighting Reference -->
+              <div class="flex flex-col gap-1 pt-space-xs text-[11px] font-body-sm text-outline">
+                <div class="flex justify-between">
+                  <span>HORIZON SEPARATION MINIMA:</span>
+                  <span class="text-on-surface font-mono">5.0 NM</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>VERTICAL SEPARATION MINIMA:</span>
+                  <span class="text-on-surface font-mono">1,000 FT (RVSM)</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>COLLISION CONE TAU THRESHOLD:</span>
+                  <span class="text-on-surface font-mono">120 SECONDS</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Modular Research Panels -->
+          <div class="lg:col-span-8 xl:col-span-9 flex flex-col gap-space-md" id="mainViewsContainer">
+
+            <!-- 1. Conflict Prediction View (Default) -->
+            <div id="view-conflict-prediction" class="flex flex-col gap-space-md">
+              <!-- Main Scientific 2D Airspace Plot Panel -->
+              <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm shadow-md relative overflow-hidden border border-surface-container">
+                <!-- Plot Header & Coordinate Reference System Bar -->
+                <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[20px]">filter_center_focus</span>
+                    <div>
+                      <span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wider">2D CARTESIAN AIRSPACE PROJECTION</span>
+                      <span class="text-outline text-body-sm font-body-sm ml-2 font-mono" id="canvasSectorBounds">[-100 NM → +100 NM] • ORTHOGONAL MERCATOR LOCAL</span>
+                    </div>
+                  </div>
+
+                  <!-- Quick Projection Controls -->
+                  <div class="flex items-center gap-space-xs">
+                    <span class="text-outline font-label-sm text-label-sm uppercase mr-1">VECTORS:</span>
+                    <button class="px-2 py-1 rounded bg-surface-container-high hover:bg-surface-variant font-label-sm text-label-sm text-primary transition-colors border border-surface-container" id="toggleEllipsesBtn" type="button">
+                      UNCERTAINTY ELLIPSE [ON]
+                    </button>
+                    <button class="px-2 py-1 rounded bg-surface-container-high hover:bg-surface-variant font-label-sm text-label-sm text-primary transition-colors border border-surface-container" id="toggleHistoryBtn" type="button">
+                      FLOWN HISTORY (60s)
+                    </button>
+                    <button class="p-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors border border-surface-container" id="recenterBtn" title="Recenter Viewport" type="button">
+                      <span class="material-symbols-outlined text-[16px]">center_focus_strong</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- 2D Canvas Area -->
+                <div class="relative w-full h-[460px] bg-surface-container-lowest rounded overflow-hidden select-none border border-surface-container" id="radarViewport">
+                  <svg class="absolute inset-0 w-full h-full" id="radarSvg" xmlns="http://www.w3.org/2000/svg">
+                    <!-- SVG elements rendered dynamically by app.js -->
+                  </svg>
+
+                  <!-- Floating Predicted LoS Banner -->
+                  <div class="absolute top-3 left-4 bg-surface-container-lowest/90 border-l-2 border-tertiary px-space-sm py-1 rounded backdrop-blur-sm pointer-events-none flex items-center gap-space-sm border border-surface-container" id="radarConflictBadge">
+                    <div class="flex items-center gap-1 font-headline-sm text-[10px] text-tertiary font-bold tracking-tight">
+                      <span class="material-symbols-outlined text-[13px] text-tertiary">warning</span>
+                      <span id="radarConflictTitle">PREDICTED LOS IN 108s</span>
+                    </div>
+                    <span class="text-outline-variant text-[10px]">•</span>
+                    <div class="flex items-center gap-space-sm font-telemetry-num text-[10px] text-on-surface-variant">
+                      <span>CPA: <strong class="text-tertiary" id="radarBadgeCpa">1.4 NM</strong></span>
+                      <span class="text-outline-variant">|</span>
+                      <span>ΔH: <strong class="text-tertiary" id="radarBadgeDh">420 FT</strong></span>
+                      <span class="text-outline-variant">|</span>
+                      <span>P(Risk): <strong class="text-tertiary" id="radarBadgeRisk">0.94</strong></span>
+                    </div>
+                  </div>
+
+                  <!-- Floating Legend -->
+                  <div class="absolute top-3 right-3 bg-surface-container-lowest/85 p-space-xs px-space-sm rounded border border-surface-container text-body-sm font-body-sm backdrop-blur-sm">
+                    <div class="flex items-center gap-3 text-[9px] font-telemetry-num text-on-surface-variant">
+                      <div class="flex items-center gap-1">
+                        <span class="w-3 h-0.5 bg-primary/70"></span>
+                        <span>Flown History</span>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <span class="w-3 h-0.5 border-b border-dashed border-primary"></span>
+                        <span>Model Lookahead</span>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <span class="w-3 h-0.5 bg-tertiary"></span>
+                        <span class="text-tertiary">Conflict Advisory</span>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <span class="w-2.5 h-1.5 rounded-full border border-dashed border-tertiary bg-tertiary/20"></span>
+                        <span>Uncertainty</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Scale Bar -->
+                  <div class="absolute bottom-2 left-3 bg-surface-container-low/80 px-1.5 py-0.5 rounded text-[9px] font-telemetry-num text-outline flex items-center gap-1.5 border border-surface-container">
+                    <span>0</span>
+                    <div class="w-12 h-0.5 bg-primary relative flex items-center justify-between">
+                      <span class="h-1.5 w-px bg-on-surface"></span>
+                      <span class="h-1.5 w-px bg-on-surface"></span>
+                    </div>
+                    <span>5.0 NM</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Secondary Analytical Sub-panel: Altitude vs Time Separation Graph -->
+              <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm shadow-md border border-surface-container">
+                <div class="flex flex-wrap items-center justify-between gap-space-sm">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-secondary text-[18px]">stacked_line_chart</span>
+                    <span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-wider" id="altProfileTitle">VERTICAL &amp; SLANT-RANGE SEPARATION PROFILE</span>
+                  </div>
+                  <div class="flex items-center gap-space-md font-telemetry-num text-[11px] text-on-surface-variant">
+                    <div class="flex items-center gap-1.5">
+                      <span class="w-2.5 h-0.5 bg-primary"></span>
+                      <span id="altLegendAc1">AC_0</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                      <span class="w-2.5 h-0.5 bg-tertiary"></span>
+                      <span id="altLegendAc2">AC_1</span>
+                    </div>
+                    <div class="flex items-center gap-1.5">
+                      <span class="w-2.5 h-0.5 bg-secondary-fixed"></span>
+                      <span>Slant Range (NM)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Analytical Chart Render (Altitude FL vs Time Seconds) -->
+                <div class="relative w-full h-44 bg-surface-container-lowest rounded p-2 overflow-hidden border border-surface-container">
+                  <svg class="w-full h-full" id="altSvg" preserveAspectRatio="none" viewBox="0 0 800 170" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Rendered dynamically by app.js -->
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Resolution Engine View -->
+            <div id="view-resolution-engine" class="hidden flex flex-col gap-space-md">
+              <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-md shadow-md border border-surface-container">
+                <div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-secondary text-[20px]">route</span>
+                    <div>
+                      <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">RESOLUTION ADVISORY &amp; MANEUVER WORKBENCH</span>
+                      <span class="text-outline text-body-sm font-body-sm ml-2 font-mono">KINEMATIC SEPARATION CORRIDOR ANALYSIS</span>
+                    </div>
+                  </div>
+                  <span class="font-label-sm text-label-sm bg-tertiary-container/20 text-tertiary px-2 py-0.5 rounded font-bold uppercase" id="resStatusBadge">ACTIVE EVALUATION</span>
+                </div>
+
+                <!-- Conflict Encounter Summary Card -->
+                <div class="bg-surface-container-lowest p-space-md rounded flex items-center justify-between border border-surface-container" id="resSummaryCard">
+                  <div class="flex flex-col gap-1">
+                    <span class="font-headline-sm text-[13px] text-on-surface font-semibold" id="resEncounterTitle">ENCOUNTER: AC_0 × AC_1</span>
+                    <span class="font-body-sm text-body-sm text-outline" id="resEncounterDesc">Current separation: 19.9 NM | Projected CPA: 0.74 NM (Loss of Separation Predicted)</span>
+                  </div>
+                  <div class="flex items-center gap-space-sm font-telemetry-num text-body-sm">
+                    <span class="text-outline">REQUIRED BUFFERS:</span>
+                    <span class="text-primary font-bold">≥ 5.0 NM Lateral</span>
+                    <span class="text-outline-variant">•</span>
+                    <span class="text-primary font-bold">≥ 1,000 FT Vertical</span>
+                  </div>
+                </div>
+
+                <!-- Three Tactical Resolution Advisories -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md" id="resolutionAdvisoriesGrid">
+                  <!-- Resolution 1: Vertical Altitude Adjustment -->
+                  <div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between gap-space-md border border-surface-container hover:border-primary transition-colors">
+                    <div class="flex flex-col gap-2">
+                      <div class="flex items-center justify-between">
+                        <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary/20 text-primary font-bold uppercase">OPTION 1: VERTICAL</span>
+                        <span class="font-label-sm text-[10px] text-tertiary font-mono">RESOLVES LOS</span>
+                      </div>
+                      <span class="font-headline-sm text-[14px] text-on-surface font-bold" id="resOpt1Title">CLIMB TO FL280 (+2,000 FT)</span>
+                      <p class="font-body-sm text-[11px] text-on-surface-variant" id="resOpt1Desc">Instruct AC_0 to initiate climb at standard ROCD (+1,500 fpm) to achieve safe flight level prior to crossing.</p>
+                      <div class="flex flex-col gap-1 font-telemetry-num text-[11px] bg-surface-container p-2 rounded">
+                        <div class="flex justify-between"><span>New Vertical Sep:</span><strong class="text-primary" id="resOpt1Vert">2,000 FT (≥ 1,000')</strong></div>
+                        <div class="flex justify-between"><span>CPA Separation:</span><strong class="text-primary">SAFE (CLEAR)</strong></div>
+                        <div class="flex justify-between text-outline"><span>Estimated Delay:</span><span>0.0 s</span></div>
+                      </div>
+                    </div>
+                    <button class="w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm py-1.5 rounded font-semibold hover:bg-primary transition-colors" type="button">
+                      ACCEPT VERTICAL ADVISORY
+                    </button>
+                  </div>
+
+                  <!-- Resolution 2: Lateral Vectoring -->
+                  <div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between gap-space-md border border-surface-container hover:border-primary transition-colors">
+                    <div class="flex flex-col gap-2">
+                      <div class="flex items-center justify-between">
+                        <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary/20 text-primary font-bold uppercase">OPTION 2: LATERAL</span>
+                        <span class="font-label-sm text-[10px] text-tertiary font-mono">RESOLVES LOS</span>
+                      </div>
+                      <span class="font-headline-sm text-[14px] text-on-surface font-bold" id="resOpt2Title">TURN RIGHT HEADING 090° (+27°)</span>
+                      <p class="font-body-sm text-[11px] text-on-surface-variant" id="resOpt2Desc">Apply standard radar vector to widen horizontal crossing geometry past minimum 5.0 NM threshold.</p>
+                      <div class="flex flex-col gap-1 font-telemetry-num text-[11px] bg-surface-container p-2 rounded">
+                        <div class="flex justify-between"><span>New Lateral CPA:</span><strong class="text-primary" id="resOpt2Lat">6.4 NM (≥ 5.0 NM)</strong></div>
+                        <div class="flex justify-between"><span>CPA Separation:</span><strong class="text-primary">SAFE (CLEAR)</strong></div>
+                        <div class="flex justify-between text-outline"><span>Track Extension:</span><span>+1.6 NM</span></div>
+                      </div>
+                    </div>
+                    <button class="w-full bg-primary-container text-on-primary-container font-headline-sm text-label-sm py-1.5 rounded font-semibold hover:bg-primary transition-colors" type="button">
+                      ACCEPT LATERAL VECTOR
+                    </button>
+                  </div>
+
+                  <!-- Resolution 3: Speed Restriction -->
+                  <div class="bg-surface-container-lowest p-space-md rounded flex flex-col justify-between gap-space-md border border-surface-container hover:border-primary transition-colors">
+                    <div class="flex flex-col gap-2">
+                      <div class="flex items-center justify-between">
+                        <span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary/20 text-primary font-bold uppercase">OPTION 3: SPEED</span>
+                        <span class="font-label-sm text-[10px] text-secondary font-mono">MARGINAL</span>
+                      </div>
+                      <span class="font-headline-sm text-[14px] text-on-surface font-bold" id="resOpt3Title">REDUCE SPEED TO 380 KTS (-75K)</span>
+                      <p class="font-body-sm text-[11px] text-on-surface-variant" id="resOpt3Desc">Stagger arrival time at the crossing point by slowing trailing aircraft within clean aerodynamic limits.</p>
+                      <div class="flex flex-col gap-1 font-telemetry-num text-[11px] bg-surface-container p-2 rounded">
+                        <div class="flex justify-between"><span>New Lateral CPA:</span><strong class="text-tertiary" id="resOpt3Lat">5.1 NM (≥ 5.0 NM)</strong></div>
+                        <div class="flex justify-between"><span>Buffer Margin:</span><strong class="text-tertiary">0.1 NM (TIGHT)</strong></div>
+                        <div class="flex justify-between text-outline"><span>En-Route Delay:</span><span>+38.0 s</span></div>
+                      </div>
+                    </div>
+                    <button class="w-full bg-surface-container text-on-surface font-headline-sm text-label-sm py-1.5 rounded font-semibold hover:bg-surface-container-high transition-colors" type="button">
+                      ACCEPT SPEED RESTRICTION
+                    </button>
+                  </div>
+                </div>
+
+                <div class="p-space-sm bg-surface-container-lowest rounded text-[11px] text-outline font-body-sm flex items-center justify-between border border-surface-container">
+                  <span>* Resolution options are calculated automatically using offline kinematic projection. Advisory only — subject to human ATC clearance.</span>
+                  <span class="text-primary font-mono">ICAO DOC 4444 COMPLIANT MODEL</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. Trajectory Inspector View -->
+            <div id="view-trajectory-inspector" class="hidden flex flex-col gap-space-md">
+              <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm shadow-md border border-surface-container">
+                <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs border-b border-surface-container">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[20px]">analytics</span>
+                    <div>
+                      <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">TRAJECTORY TELEMETRY INSPECTOR</span>
+                      <span class="text-outline text-body-sm font-body-sm ml-2 font-mono">DISCRETE OBSERVATION STREAM &amp; PREDICTION ARRAYS</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-space-xs">
+                    <span class="text-outline font-label-sm text-label-sm uppercase">AIRCRAFT:</span>
+                    <select class="bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-2 py-1 rounded border border-surface-container" id="inspectorAircraftFilter">
+                      <option value="ALL">All Aircraft</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- High Density Telemetry Data Table -->
+                <div class="w-full max-h-[500px] overflow-y-auto bg-surface-container-lowest rounded border border-surface-container">
+                  <table class="w-full text-left font-telemetry-num text-[11px]">
+                    <thead class="bg-surface-container sticky top-0 border-b border-surface-container text-outline uppercase font-label-sm text-[10px]">
+                      <tr>
+                        <th class="p-2">TIME (s)</th>
+                        <th class="p-2">ACID</th>
+                        <th class="p-2">FL</th>
+                        <th class="p-2">ALT (FT)</th>
+                        <th class="p-2">GS (KT)</th>
+                        <th class="p-2">HDG (°)</th>
+                        <th class="p-2">ROCD</th>
+                        <th class="p-2">POS X (NM)</th>
+                        <th class="p-2">POS Y (NM)</th>
+                      </tr>
+                    </thead>
+                    <tbody id="inspectorTableBody" class="divide-y divide-surface-container">
+                      <!-- Rendered dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. LoS Advisory Ledger View -->
+            <div id="view-los-ledger" class="hidden flex flex-col gap-space-md">
+              <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-sm shadow-md border border-surface-container">
+                <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs border-b border-surface-container">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-tertiary text-[20px]">report_problem</span>
+                    <div>
+                      <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">LOSS OF SEPARATION (LOS) ADVISORY LEDGER</span>
+                      <span class="text-outline text-body-sm font-body-sm ml-2 font-mono" id="ledgerCountDisplay">SCENARIO PARTITION INVENTORY</span>
+                    </div>
+                  </div>
+                  <!-- Filter Buttons -->
+                  <div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded border border-surface-container" id="ledgerFilterGroup">
+                    <button class="px-2 py-0.5 rounded font-label-sm text-[11px] bg-primary text-on-primary font-semibold" data-filter="ALL" type="button">ALL</button>
+                    <button class="px-2 py-0.5 rounded font-label-sm text-[11px] text-on-surface-variant hover:bg-surface-container" data-filter="ALERT" type="button">CONFLICTS</button>
+                    <button class="px-2 py-0.5 rounded font-label-sm text-[11px] text-on-surface-variant hover:bg-surface-container" data-filter="NEAR MISS" type="button">NEAR MISSES</button>
+                    <button class="px-2 py-0.5 rounded font-label-sm text-[11px] text-on-surface-variant hover:bg-surface-container" data-filter="NOMINAL" type="button">NOMINAL</button>
+                  </div>
+                </div>
+
+                <!-- Ledger Table -->
+                <div class="w-full max-h-[500px] overflow-y-auto bg-surface-container-lowest rounded border border-surface-container">
+                  <table class="w-full text-left font-telemetry-num text-[11px]">
+                    <thead class="bg-surface-container sticky top-0 border-b border-surface-container text-outline uppercase font-label-sm text-[10px]">
+                      <tr>
+                        <th class="p-2">SCENARIO ID</th>
+                        <th class="p-2">STATUS</th>
+                        <th class="p-2">TYPE</th>
+                        <th class="p-2">FIRST ONSET</th>
+                        <th class="p-2">MIN LATERAL</th>
+                        <th class="p-2">MIN VERTICAL</th>
+                        <th class="p-2">ACTION</th>
+                      </tr>
+                    </thead>
+                    <tbody id="ledgerTableBody" class="divide-y divide-surface-container">
+                      <!-- Rendered dynamically -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Model Benchmarks View -->
+            <div id="view-model-benchmarks" class="hidden flex flex-col gap-space-md">
+              <div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-md shadow-md border border-surface-container">
+                <div class="flex items-center justify-between pb-space-xs border-b border-surface-container">
+                  <div class="flex items-center gap-space-sm">
+                    <span class="material-symbols-outlined text-primary text-[20px]">neurology</span>
+                    <div>
+                      <span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">MODEL BENCHMARK COMPARISON MATRIX</span>
+                      <span class="text-outline text-body-sm font-body-sm ml-2 font-mono">OFFICIAL EVALUATION METRICS WITH 95% BOOTSTRAP CIS</span>
+                    </div>
+                  </div>
+                  <span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-primary font-mono font-semibold">REPORT.MD REPRODUCED</span>
+                </div>
+
+                <!-- Table 1: Trajectory Position RMSE -->
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-headline-sm text-[12px] text-primary uppercase font-bold tracking-wider">1. Trajectory Position Prediction Error (RMSE across Forecast Horizons)</span>
+                  <div class="overflow-x-auto bg-surface-container-lowest rounded border border-surface-container">
+                    <table class="w-full text-left font-telemetry-num text-[11px]">
+                      <thead class="bg-surface-container text-outline uppercase font-label-sm text-[10px]">
+                        <tr>
+                          <th class="p-2">HORIZON</th>
+                          <th class="p-2">cv_smoothed (hard_large)</th>
+                          <th class="p-2">Residual LSTM (hard_large)</th>
+                          <th class="p-2">cv_smoothed (hard_v1)</th>
+                          <th class="p-2">Residual LSTM (hard_v1)</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-surface-container">
+                        <tr><td class="p-2 font-bold text-on-surface">30 s</td><td class="p-2 text-outline">0.1690 NM / 65.72 ft</td><td class="p-2 text-primary font-bold">0.0979 NM / 34.53 ft</td><td class="p-2 text-outline">0.1651 NM / 64.15 ft</td><td class="p-2 text-primary font-bold">0.0953 NM / 33.71 ft</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">60 s</td><td class="p-2 text-outline">0.3545 NM / 108.15 ft</td><td class="p-2 text-primary font-bold">0.2526 NM / 59.40 ft</td><td class="p-2 text-outline">0.3480 NM / 103.90 ft</td><td class="p-2 text-primary font-bold">0.2465 NM / 56.86 ft</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">120 s</td><td class="p-2 text-outline">0.8359 NM / 189.22 ft</td><td class="p-2 text-primary font-bold">0.6907 NM / 93.98 ft</td><td class="p-2 text-outline">0.8267 NM / 179.77 ft</td><td class="p-2 text-primary font-bold">0.6824 NM / 87.89 ft</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">180 s</td><td class="p-2 text-outline">1.4344 NM / 267.48 ft</td><td class="p-2 text-primary font-bold">1.2555 NM / 117.78 ft</td><td class="p-2 text-outline">1.4234 NM / 253.25 ft</td><td class="p-2 text-primary font-bold">1.2462 NM / 109.73 ft</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">240 s</td><td class="p-2 text-outline">2.1312 NM / 344.94 ft</td><td class="p-2 text-primary font-bold">1.9233 NM / 135.33 ft</td><td class="p-2 text-outline">2.1167 NM / 326.32 ft</td><td class="p-2 text-primary font-bold">1.9109 NM / 125.81 ft</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">300 s</td><td class="p-2 text-outline">2.9138 NM / 421.58 ft</td><td class="p-2 text-primary font-bold">2.6798 NM / 148.90 ft</td><td class="p-2 text-outline">2.8899 NM / 398.66 ft</td><td class="p-2 text-primary font-bold">2.6582 NM / 138.63 ft</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <!-- Table 2: Conflict Advisory Performance -->
+                <div class="flex flex-col gap-space-xs">
+                  <span class="font-headline-sm text-[12px] text-tertiary uppercase font-bold tracking-wider">2. Conflict Advisory Classification on hard_large TEST (450 Scenarios, 155,498 Samples)</span>
+                  <div class="overflow-x-auto bg-surface-container-lowest rounded border border-surface-container">
+                    <table class="w-full text-left font-telemetry-num text-[11px]">
+                      <thead class="bg-surface-container text-outline uppercase font-label-sm text-[10px]">
+                        <tr>
+                          <th class="p-2">METRIC</th>
+                          <th class="p-2">cv_smoothed Baseline</th>
+                          <th class="p-2">Residual LSTM (best.pt)</th>
+                          <th class="p-2">DELTA / GAIN</th>
+                        </tr>
+                      </thead>
+                      <tbody class="divide-y divide-surface-container">
+                        <tr><td class="p-2 font-bold text-on-surface">Conflict Detection Rate</td><td class="p-2 text-on-surface">1.0000 [1.0000, 1.0000]</td><td class="p-2 text-primary font-bold">1.0000 [1.0000, 1.0000]</td><td class="p-2 text-outline">Parity (18/18 detected)</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">Precision</td><td class="p-2 text-on-surface">0.9609 [0.9435, 0.9737]</td><td class="p-2 text-primary font-bold">0.9958 [0.9904, 0.9993]</td><td class="p-2 text-primary">+3.49% precision gain</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">Recall</td><td class="p-2 text-on-surface">0.8639 [0.8248, 0.8988]</td><td class="p-2 text-primary font-bold">0.8947 [0.8616, 0.9259]</td><td class="p-2 text-primary">+3.08% recall gain</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">F1-Score</td><td class="p-2 text-on-surface">0.9099 [0.8852, 0.9307]</td><td class="p-2 text-primary font-bold">0.9425 [0.9238, 0.9594]</td><td class="p-2 text-primary">+0.0326 F1 improvement</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">False Alarms / 1000 Neg</td><td class="p-2 text-on-surface">0.36</td><td class="p-2 text-primary font-bold">0.04</td><td class="p-2 text-primary font-bold">-88.9% False Alarms</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">Maneuvering Recall</td><td class="p-2 text-on-surface">0.7206 (557 / 773)</td><td class="p-2 text-primary font-bold">0.7865 (608 / 773)</td><td class="p-2 text-primary">+6.59% maneuvering recall</td></tr>
+                        <tr><td class="p-2 font-bold text-on-surface">Non-Maneuvering Recall</td><td class="p-2 text-primary font-bold">0.9988 (821 / 822)</td><td class="p-2 text-on-surface">0.9964 (819 / 822)</td><td class="p-2 text-outline">Near-perfect nominal recall</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Bottom Metrics, Model Evaluator & Benchmarking Strip -->
+        <div class="w-full bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-sm shadow-md border border-surface-container">
+          <div class="flex flex-wrap items-center justify-between gap-space-sm pb-space-xs border-b border-surface-container">
+            <div class="flex items-center gap-space-xs">
+              <span class="font-label-sm text-label-sm uppercase text-outline mr-1">MODEL:</span>
+              <div class="inline-flex bg-surface-container-lowest p-0.5 rounded gap-0.5 border border-surface-container" id="modelSelectorGroup">
+                <button class="px-2.5 py-1 rounded font-headline-sm text-[12px] text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" data-model="cv_3step" type="button">
+                  cv_3step
+                </button>
+                <button class="px-2.5 py-1 rounded font-headline-sm text-[12px] bg-primary-container text-on-primary-container font-semibold shadow-sm" data-model="cv_smoothed" type="button">
+                  cv_smoothed (Active)
+                </button>
+                <button class="px-2.5 py-1 rounded font-headline-sm text-[12px] text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors flex items-center gap-1" data-model="lstm_v1" type="button">
+                  <span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  <span>lstm_v1</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-space-md font-telemetry-num text-[11px] text-on-surface-variant">
+              <div class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-[13px] text-primary">timer</span>
+                <span>Latency: <strong class="text-on-surface" id="modelLatencyDisplay">0.5ms</strong></span>
+              </div>
+              <span class="text-outline-variant">•</span>
+              <div class="flex items-center gap-1">
+                <span class="text-outline">WEIGHTS:</span>
+                <span class="text-primary-fixed truncate max-w-xs font-mono" id="modelWeightsDisplay">checkpoints/lstm_v1/best.pt</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-space-xs">
+              <button class="flex items-center gap-1 bg-surface-container hover:bg-surface-container-high text-on-surface px-2 py-1 rounded font-label-sm text-label-sm uppercase transition-colors border border-surface-container" id="exportMetricsBtn" type="button">
+                <span class="material-symbols-outlined text-[13px]">download</span>
+                <span>EXPORT METRICS</span>
+              </button>
+              <button class="flex items-center gap-1 bg-surface-container hover:bg-surface-container-high text-on-surface px-2 py-1 rounded font-label-sm text-label-sm uppercase transition-colors border border-surface-container" id="exportReportBtn" type="button">
+                <span class="material-symbols-outlined text-[13px]">picture_as_pdf</span>
+                <span>REPORT</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 6 Benchmark Metric Cards -->
+          <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-space-sm">
+            <!-- 1. Precision -->
+            <div class="bg-surface-container-lowest p-space-xs px-space-sm rounded flex flex-col justify-between border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[10px] uppercase text-outline">PRECISION</span>
+                <span class="font-label-sm text-[9px] text-primary font-mono" id="metricPrecisionDelta">VALIDATED</span>
+              </div>
+              <div class="my-0.5 flex items-baseline gap-1">
+                <span class="font-telemetry-num text-[18px] text-primary font-bold" id="metricPrecision">0.9107</span>
+                <span class="text-[10px] font-body-sm text-outline">P(&lt;300s)</span>
+              </div>
+              <div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+                <div class="bg-primary h-full transition-all duration-300" id="barPrecision" style="width: 91.1%;"></div>
+              </div>
+            </div>
+
+            <!-- 2. Recall -->
+            <div class="bg-surface-container-lowest p-space-xs px-space-sm rounded flex flex-col justify-between border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[10px] uppercase text-outline">RECALL</span>
+                <span class="font-label-sm text-[9px] text-tertiary font-mono" id="metricRecallDelta">TP RATE</span>
+              </div>
+              <div class="my-0.5 flex items-baseline gap-1">
+                <span class="font-telemetry-num text-[18px] text-tertiary font-bold" id="metricRecall">0.8226</span>
+                <span class="text-[10px] font-body-sm text-outline">DET RATE</span>
+              </div>
+              <div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+                <div class="bg-tertiary h-full transition-all duration-300" id="barRecall" style="width: 82.3%;"></div>
+              </div>
+            </div>
+
+            <!-- 3. F1-Score -->
+            <div class="bg-surface-container-lowest p-space-xs px-space-sm rounded flex flex-col justify-between border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[10px] uppercase text-outline">F1-SCORE</span>
+                <span class="font-label-sm text-[9px] text-primary-fixed-dim font-mono">BALANCED</span>
+              </div>
+              <div class="my-0.5 flex items-baseline gap-1">
+                <span class="font-telemetry-num text-[18px] text-on-surface font-bold" id="metricF1">0.8644</span>
+                <span class="text-[10px] font-body-sm text-outline">HARMONIC</span>
+              </div>
+              <div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+                <div class="bg-primary-container h-full transition-all duration-300" id="barF1" style="width: 86.4%;"></div>
+              </div>
+            </div>
+
+            <!-- 4. FAR -->
+            <div class="bg-surface-container-lowest p-space-xs px-space-sm rounded flex flex-col justify-between border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[10px] uppercase text-outline">FAR / 1000 NEG</span>
+                <span class="font-label-sm text-[9px] text-outline font-mono">PER THOUSAND</span>
+              </div>
+              <div class="my-0.5 flex items-baseline gap-1">
+                <span class="font-telemetry-num text-[18px] text-secondary-fixed-dim font-bold" id="metricFar">0.63</span>
+                <span class="text-[10px] font-body-sm text-outline">FA RATE</span>
+              </div>
+              <div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+                <div class="bg-secondary-container h-full transition-all duration-300" id="barFar" style="width: 6.3%;"></div>
+              </div>
+            </div>
+
+            <!-- 5. MTTD Lead Time -->
+            <div class="bg-surface-container-lowest p-space-xs px-space-sm rounded flex flex-col justify-between border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[10px] uppercase text-outline">MEDIAN LEAD</span>
+                <span class="font-label-sm text-[9px] text-tertiary-fixed font-mono">&gt;60s REQ</span>
+              </div>
+              <div class="my-0.5 flex items-baseline gap-1">
+                <span class="font-telemetry-num text-[18px] text-tertiary-fixed font-bold" id="metricLead">120.0s</span>
+                <span class="text-[10px] font-body-sm text-outline">TO LOS</span>
+              </div>
+              <div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+                <div class="bg-tertiary-fixed-dim h-full transition-all duration-300" id="barLead" style="width: 66.7%;"></div>
+              </div>
+            </div>
+
+            <!-- 6. TTC MAE & Sample Counts -->
+            <div class="bg-surface-container-lowest p-space-xs px-space-sm rounded flex flex-col justify-between border border-surface-container">
+              <div class="flex items-center justify-between">
+                <span class="font-label-sm text-[10px] uppercase text-outline">TTC MAE</span>
+                <span class="font-telemetry-num text-[10px] text-primary font-bold" id="metricTtcMae">0.92s</span>
+              </div>
+              <div class="grid grid-cols-2 gap-x-2 gap-y-0.5 text-[9px] font-telemetry-num py-0.5">
+                <div class="flex justify-between text-on-surface"><span>TP:</span><strong class="text-tertiary font-bold" id="metricTpCount">153</strong></div>
+                <div class="flex justify-between text-outline"><span>FP:</span><strong class="text-on-surface-variant font-bold" id="metricFpCount">15</strong></div>
+              </div>
+              <div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+                <div class="bg-tertiary h-full transition-all duration-300" id="barTtc" style="width: 90%;"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </main>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
