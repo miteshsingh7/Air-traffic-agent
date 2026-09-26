@@ -29,6 +29,7 @@ from src.agent.types import (
     PairwiseCPA,
     ScenarioAdvisoryReport,
 )
+from src.conflict.risk import compute_conflict_risk
 from src.data.windows import extract_scenario_origin_groups
 
 logger = logging.getLogger(__name__)
@@ -405,9 +406,12 @@ class ConflictAdvisoryAgent:
         is_vertical_violation = cpa.cpa_vertical_ft < self.vertical_min_ft
         is_conflict = is_lateral_violation and is_vertical_violation
 
-        lat_risk = max(0.0, 1.0 - cpa.cpa_lateral_nm / self.lateral_min_nm)
-        vert_risk = max(0.0, 1.0 - cpa.cpa_vertical_ft / self.vertical_min_ft)
-        p_risk = min(lat_risk, vert_risk)
+        p_risk = compute_conflict_risk(
+            cpa_lateral_nm=cpa.cpa_lateral_nm,
+            cpa_vertical_ft=cpa.cpa_vertical_ft,
+            lateral_min_nm=self.lateral_min_nm,
+            vertical_min_ft=self.vertical_min_ft,
+        )
 
         return is_conflict, p_risk
 

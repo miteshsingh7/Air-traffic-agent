@@ -125,7 +125,10 @@ def test_scenario_detail_endpoint():
     assert pair["curr_distance_nm"] > 0
     assert pair["predicted_cpa_nm"] >= 0
     assert pair["predicted_tau_s"] >= 0
+    assert "closing_speed_kt" in pair
+    assert pair["closing_speed_kt"] >= 0
     assert "p_risk" in pair
+    assert 0.0 <= pair["p_risk"] <= 1.0
 
 
 @pytest.mark.parametrize(

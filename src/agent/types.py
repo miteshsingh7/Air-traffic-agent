@@ -9,6 +9,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
+from src.conflict.risk import compute_conflict_risk
+
 
 @dataclass(frozen=True)
 class PairwiseCPA:

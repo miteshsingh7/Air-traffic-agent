@@ -29,6 +29,7 @@ from src.agent import (
     ScenarioAdvisoryReport,
 )
 from src.agent.advisor import TrajectoryPredictor
+from src.conflict.risk import compute_conflict_risk
 from src.models.baseline import (
     ConstantVelocityPredictor,
     SmoothedConstantVelocityPredictor,
@@ -368,6 +369,32 @@ class TestClassify:
             for vert in [0.0, 500.0, 1000.0, 2000.0]:
                 _, p_risk = agent._classify(self._cpa(lat=lat, vert=vert))
                 assert 0.0 <= p_risk <= 1.0, f"Out of range: lat={lat}, vert={vert}, p_risk={p_risk}"
+
+
+class TestComputeConflictRisk:
+    """Direct unit tests for the shared compute_conflict_risk function."""
+
+    def test_zero_separation_yields_one(self) -> None:
+        assert compute_conflict_risk(0.0, 0.0, 5.0, 1000.0) == pytest.approx(1.0)
+
+    def test_at_lateral_minimum_yields_zero(self) -> None:
+        assert compute_conflict_risk(5.0, 0.0, 5.0, 1000.0) == pytest.approx(0.0)
+
+    def test_beyond_lateral_minimum_yields_zero(self) -> None:
+        assert compute_conflict_risk(7.5, 0.0, 5.0, 1000.0) == pytest.approx(0.0)
+
+    def test_at_vertical_minimum_yields_zero(self) -> None:
+        assert compute_conflict_risk(0.0, 1000.0, 5.0, 1000.0) == pytest.approx(0.0)
+
+    def test_linear_interpolation(self) -> None:
+        # Halfway on lateral (2.5 NM -> 0.5), quarter on vertical (250 ft -> 0.75) -> min is 0.5
+        assert compute_conflict_risk(2.5, 250.0, 5.0, 1000.0) == pytest.approx(0.5)
+
+    def test_invalid_parameters_raise(self) -> None:
+        with pytest.raises(ValueError, match="lateral_min_nm"):
+            compute_conflict_risk(1.0, 100.0, lateral_min_nm=0.0)
+        with pytest.raises(ValueError, match="vertical_min_ft"):
+            compute_conflict_risk(1.0, 100.0, vertical_min_ft=-10.0)
 
 
 # ---------------------------------------------------------------------------

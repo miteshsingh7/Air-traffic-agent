@@ -20,6 +20,7 @@ import torch
 import yaml
 
 from src.conflict.geometry import ConflictRecord, compute_scenario_conflicts
+from src.conflict.risk import compute_conflict_risk
 from src.data.synthetic import TrajectoryConfig
 from src.eval.conflict_eval import ConflictEvaluationResult
 from src.eval.metrics import PositionErrorMetric
@@ -482,19 +483,23 @@ def load_scenario_detail(
                         has_gt_los = True
                         break
 
-            # Calibrate conflict probability P(C)
-            if has_pred_conflict:
-                p_risk = round(min(0.99, max(0.75, 1.0 - (cpa_dist_nm / 10.0))), 3)
-            elif cpa_dist_nm < 8.0 and cpa_vert_ft < 1500.0:
-                p_risk = round(max(0.15, 0.60 - (cpa_dist_nm / 16.0)), 3)
-            else:
-                p_risk = 0.05
+            # Continuous conflict risk score P(risk)
+            p_risk = round(
+                compute_conflict_risk(
+                    cpa_lateral_nm=cpa_dist_nm,
+                    cpa_vertical_ft=cpa_vert_ft,
+                    lateral_min_nm=5.0,
+                    vertical_min_ft=1000.0,
+                ),
+                4,
+            )
 
             pair_entry = {
                 "aircraft_1": ac1["aircraft_id"],
                 "aircraft_2": ac2["aircraft_id"],
                 "curr_distance_nm": round(curr_lat_dist, 2),
                 "curr_vertical_ft": round(curr_vert_dist, 1),
+                "closing_speed_kt": round(v_rel_speed, 1),
                 "closure_rate_kt": round(closure_rate_kt, 1),
                 "closure_rate_nm_min": round(closure_rate_kt / 60.0, 2),
                 "predicted_cpa_nm": round(cpa_dist_nm, 2),

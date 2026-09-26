@@ -234,7 +234,9 @@ class LSTMTrajectoryPredictor(nn.Module):
 
         with torch.no_grad():
             for start_idx in range(0, b_total, chunk_size):
-                chunk = h_in[start_idx : start_idx + chunk_size]
+                chunk = np.ascontiguousarray(h_in[start_idx : start_idx + chunk_size])
+                if not chunk.flags.writeable:
+                    chunk = chunk.copy()
                 t_in = torch.as_tensor(chunk, dtype=torch.float32, device=self.target_device)
                 pred_t = self.forward(t_in, return_residual=False)
                 assert isinstance(pred_t, torch.Tensor)

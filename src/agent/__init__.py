@@ -15,7 +15,7 @@ ScenarioAdvisoryReport
 """
 
 from src.agent.advisor import ConflictAdvisoryAgent, TrajectoryPredictor
-from src.agent.types import ConflictAdvisory, PairwiseCPA, ScenarioAdvisoryReport
+from src.agent.types import ConflictAdvisory, PairwiseCPA, ScenarioAdvisoryReport, compute_conflict_risk
 
 __all__ = [
     "ConflictAdvisoryAgent",
@@ -23,4 +23,5 @@ __all__ = [
     "ConflictAdvisory",
     "PairwiseCPA",
     "ScenarioAdvisoryReport",
+    "compute_conflict_risk",
 ]
